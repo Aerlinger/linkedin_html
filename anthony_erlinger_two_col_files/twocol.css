@@ -1,0 +1,361 @@
+#resume #name {
+    font-size: 36px;
+    width: 400px;
+    text-align: left;
+}
+
+
+#resume {
+    font-size: 12px;
+    width: 780px;
+    padding: 60px;
+    margin: 0 auto;
+    -moz-box-shadow: #dddddd 1px 1px 10px 6px;
+    -webkit-box-shadow: #dddddd 1px 1px 10px 6px;
+    -o-box-shadow: #dddddd 1px 1px 10px 6px;
+    box-shadow: #dddddd 1px 1px 10px 6px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 22px
+}
+
+#resume .picture.empty-section {
+    margin: 0 !important
+}
+
+#resume .empty-section {
+    padding: 5px 0;
+    border: 1px dashed #cccccc !important;
+    margin: 10px 0 !important
+}
+
+#resume .empty-section h2 {
+    opacity: 0.3;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30)
+}
+
+#resume .empty-section-contents {
+    height: 25px;
+    padding: 0 5px !important
+}
+
+#resume .empty-blurb {
+    float: left;
+    margin-right: 10px;
+    opacity: 0.3;
+    -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30)
+}
+
+#resume .why {
+    float: left;
+    height: 16px;
+    width: 16px;
+    background: url('/images/../images/icons.png?1344924637') 0 -258px transparent no-repeat;
+    margin-top: 3px
+}
+
+#resume .date-separator {
+    padding: 0 3px
+}
+
+#resume .picture {
+    width: 80px;
+    height: 80px
+}
+
+#resume .patent-office {
+    text-transform: uppercase
+}
+
+#resume .dot-separator {
+    padding: 0 8px
+}
+
+#resume .content .hidden-section, #resume .content .hidden-subsection {
+    padding-top: 5px;
+    padding-bottom: 5px
+}
+
+#resume .content .hidden-section .empty-blurb, #resume .content .hidden-subsection .empty-blurb {
+    font-size: 12px;
+    float: none;
+    display: inline
+}
+
+#resume .content .hidden-section .why, #resume .content .hidden-subsection .why {
+    background: url('/images/../images/icons.png?1344924637') 0 -251px transparent no-repeat;
+    float: none;
+    display: inline;
+    padding: 8px
+}
+
+#resume .content li.hidden-section, #resume .content li.hidden-subsection {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+#resume a {
+    color: #8d97bb
+}
+
+#resume ol, #resume ul {
+    padding: 0 0 10px 15px
+}
+
+#resume li {
+    /*padding-bottom: 5px*/
+}
+
+#resume .picture, #resume .contact h2, #resume .contact .label, #resume .headline, #resume .address .label {
+    display: none
+}
+
+#resume .first-name {
+    margin-right: 5px
+}
+
+#resume .summary h2, #resume .specialties h2, #resume .skills h2, #resume .positions h2, #resume .educations h2, #resume .honors h2, #resume .interests h2, #resume .associations h2, #resume .certifications h2, #resume .languages h2, #resume .patents h2, #resume .publications h2, #resume .error-section h2, #resume .name {
+    color: #8d97bb;
+    float: left;
+    width: 180px;
+    text-align: right;
+    font-size: 18px;
+    font-weight: normal;
+    /*text-transform: lowercase;*/
+    margin: 0;
+    padding: 0 25px 0 0
+}
+
+#resume .summary .content, #resume .specialties .content, #resume .skills .content, #resume .positions .content, #resume .educations .content, #resume .honors .content, #resume .interests .content, #resume .associations .content, #resume .certifications .content, #resume .languages .content, #resume .patents .content, #resume .publications .content, #resume .error-section .content, #resume .contact {
+    font-size: 12px;
+    float: left;
+    width: 523px;
+    padding: 5px 0 30px 25px;
+    border-left: 2px solid #6e849a
+}
+
+#resume .summary, #resume .specialties, #resume .skills, #resume .positions, #resume .educations, #resume .honors, #resume .interests, #resume .associations, #resume .certifications, #resume .languages, #resume .patents, #resume .publications, #resume .error-section {
+    clear: both;
+    overflow: visible;
+    width: 100%
+}
+
+#resume .contact, #resume .summary, #resume .specialties {
+    font-size: 14px
+}
+
+#resume .contact, #resume .name {
+    padding-top: 10px !important
+    font-size: 24px !important;
+    color: black;
+}
+
+#resume .footer {
+    /*border-right: 2px solid #6e849a;*/
+    height: 70px;
+    clear: both;
+    width: 225px;
+}
+
+#resume .position .company-name, #resume .education .school-name, #resume .certification .certification-name, #resume .patent .patent-title, #resume .publication .publication-title {
+    font-size: 20px;
+    float: left
+}
+
+#resume .position .title, #resume .education .program, #resume .certification .certificate-details, #resume .patent .patent-details, #resume .publication .publication-details {
+    color: #555555;
+    font-style: italic;
+    clear: both
+}
+
+#resume .position .dates, #resume .education .dates, #resume .certification .dates, #resume .patent .dates, #resume .publication .dates {
+    font-size: 14px;
+    float: right
+}
+
+#resume .position .job-summary, #resume .education .notes, #resume .education .activities, #resume .patent .patent-summary, #resume .publication .publication-summary {
+    margin-top: 5px;
+    clear: both
+}
+
+#resume .position, #resume .education, #resume .certification, #resume .patent, #resume .publication {
+    margin-bottom: 30px
+}
+
+#resume .positions .content, #resume .educations .content, #resume .certifications .content, #resume .patents .content, #resume .publications .content {
+    padding-bottom: 0 !important
+}
+
+#resume .skill-attributes, #resume .language-attributes {
+    display: none
+}
+
+#resume .patent .patent-details, #resume .publication .publication-details, #resume .certification .certificate-details {
+    font-size: 11px
+}
+
+#resume .skills li, #resume .languages li {
+    float: left;
+    width: 145px;
+    padding-right: 20px;
+    word-wrap: break-word
+}
+
+#resume .skills li .skill-name, #resume .languages li .skill-name {
+    font-size: 12px
+}
+
+#resume .skills li .left-paren, #resume .skills li .right-paren, #resume .skills li .proficiency, #resume .skills li .comma, #resume .skills li .years, #resume .languages li .left-paren, #resume .languages li .right-paren, #resume .languages li .proficiency, #resume .languages li .comma, #resume .languages li .years {
+    font-size: 10px;
+    color: #555555
+}
+
+#resume .skills li .comma, #resume .languages li .comma {
+    margin-left: -2px
+}
+
+#resume .skills li .left-paren, #resume .languages li .left-paren {
+    margin-right: -2px
+}
+
+#resume .skills li .right-paren, #resume .languages li .right-paren {
+    margin-left: -2px
+}
+
+#wrapper.print #resume {
+    font-size: 18px;
+    width: 1100px;
+    padding: 0;
+    -moz-box-shadow: white 0 0 0 0;
+    -webkit-box-shadow: white 0 0 0 0;
+    -o-box-shadow: white 0 0 0 0;
+    box-shadow: white 0 0 0 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 33px
+}
+
+#wrapper.print #resume a {
+    color: #8d97bb
+}
+
+#wrapper.print #resume ol, #wrapper.print #resume ul {
+    padding: 0 0 10px 15px
+}
+
+#wrapper.print #resume li {
+    padding-bottom: 7.5px
+}
+
+#wrapper.print #resume .picture, #wrapper.print #resume .contact h2, #wrapper.print #resume .contact .label, #wrapper.print #resume .headline, #wrapper.print #resume .address .label {
+    display: none
+}
+
+#wrapper.print #resume .first-name {
+    margin-right: 7.5px
+}
+
+#wrapper.print #resume .summary h2, #wrapper.print #resume .specialties h2, #wrapper.print #resume .skills h2, #wrapper.print #resume .positions h2, #wrapper.print #resume .educations h2, #wrapper.print #resume .honors h2, #wrapper.print #resume .interests h2, #wrapper.print #resume .associations h2, #wrapper.print #resume .certifications h2, #wrapper.print #resume .languages h2, #wrapper.print #resume .patents h2, #wrapper.print #resume .publications h2, #wrapper.print #resume .error-section h2, #wrapper.print #resume .name {
+    color: #8d97bb;
+    float: left;
+    width: 300px;
+    text-align: right;
+    font-size: 34.5px;
+    font-weight: normal;
+    text-transform: lowercase;
+    margin: 0;
+    padding: 0 37.5px 0 0
+}
+
+#wrapper.print #resume .summary .content, #wrapper.print #resume .specialties .content, #wrapper.print #resume .skills .content, #wrapper.print #resume .positions .content, #wrapper.print #resume .educations .content, #wrapper.print #resume .honors .content, #wrapper.print #resume .interests .content, #wrapper.print #resume .associations .content, #wrapper.print #resume .certifications .content, #wrapper.print #resume .languages .content, #wrapper.print #resume .patents .content, #wrapper.print #resume .publications .content, #wrapper.print #resume .error-section .content, #wrapper.print #resume .contact {
+    float: left;
+    width: 718px;
+    padding: 5px 0 45px 37.5px;
+    border-left: 2px solid #6e849a
+}
+
+#wrapper.print #resume .summary, #wrapper.print #resume .specialties, #wrapper.print #resume .skills, #wrapper.print #resume .positions, #wrapper.print #resume .educations, #wrapper.print #resume .honors, #wrapper.print #resume .interests, #wrapper.print #resume .associations, #wrapper.print #resume .certifications, #wrapper.print #resume .languages, #wrapper.print #resume .patents, #wrapper.print #resume .publications, #wrapper.print #resume .error-section {
+    clear: both;
+    overflow: visible;
+    width: 100%
+}
+
+#wrapper.print #resume .contact, #wrapper.print #resume .summary, #wrapper.print #resume .specialties {
+    font-size: 21px
+}
+
+#wrapper.print #resume .contact, #wrapper.print #resume .name {
+    padding-top: 120px !important
+}
+
+#wrapper.print #resume .footer {
+    border-right: 2px solid #6e849a;
+    height: 105px;
+    clear: both;
+    width: 337.5px
+}
+
+#wrapper.print #resume .position .company-name, #wrapper.print #resume .education .school-name, #wrapper.print #resume .certification .certification-name, #wrapper.print #resume .patent .patent-title, #wrapper.print #resume .publication .publication-title {
+    font-size: 30px;
+    float: left
+}
+
+#wrapper.print #resume .position .title, #wrapper.print #resume .education .program, #wrapper.print #resume .certification .certificate-details, #wrapper.print #resume .patent .patent-details, #wrapper.print #resume .publication .publication-details {
+    color: #555555;
+    font-style: italic;
+    clear: both
+}
+
+#wrapper.print #resume .position .dates, #wrapper.print #resume .education .dates, #wrapper.print #resume .certification .dates, #wrapper.print #resume .patent .dates, #wrapper.print #resume .publication .dates {
+    font-size: 21px;
+    float: right
+}
+
+#wrapper.print #resume .position .job-summary, #wrapper.print #resume .education .notes, #wrapper.print #resume .education .activities, #wrapper.print #resume .patent .patent-summary, #wrapper.print #resume .publication .publication-summary {
+    margin-top: 7.5px;
+    clear: both
+}
+
+#wrapper.print #resume .position, #wrapper.print #resume .education, #wrapper.print #resume .certification, #wrapper.print #resume .patent, #wrapper.print #resume .publication {
+    margin-bottom: 45px
+}
+
+#wrapper.print #resume .positions .content, #wrapper.print #resume .educations .content, #wrapper.print #resume .certifications .content, #wrapper.print #resume .patents .content, #wrapper.print #resume .publications .content {
+    padding-bottom: 0 !important
+}
+
+#wrapper.print #resume .skill-attributes, #wrapper.print #resume .language-attributes {
+    display: none
+}
+
+#wrapper.print #resume .patent .patent-details, #wrapper.print #resume .publication .publication-details, #wrapper.print #resume .certification .certificate-details {
+    font-size: 16.5px
+}
+
+#wrapper.print #resume .skills li, #wrapper.print #resume .languages li {
+    float: left;
+    width: 240px;
+    padding-right: 15px;
+    word-wrap: break-word
+}
+
+#wrapper.print #resume .skills li .skill-name, #wrapper.print #resume .languages li .skill-name {
+    font-size: 16px
+}
+
+#wrapper.print #resume .skills li .left-paren, #wrapper.print #resume .skills li .right-paren, #wrapper.print #resume .skills li .proficiency, #wrapper.print #resume .skills li .comma, #wrapper.print #resume .skills li .years, #wrapper.print #resume .languages li .left-paren, #wrapper.print #resume .languages li .right-paren, #wrapper.print #resume .languages li .proficiency, #wrapper.print #resume .languages li .comma, #wrapper.print #resume .languages li .years {
+    font-size: 11px;
+    color: #555555
+}
+
+#wrapper.print #resume .skills li .comma, #wrapper.print #resume .languages li .comma {
+    margin-left: -2px
+}
+
+#wrapper.print #resume .skills li .left-paren, #wrapper.print #resume .languages li .left-paren {
+    margin-right: -2px
+}
+
+#wrapper.print #resume .skills li .right-paren, #wrapper.print #resume .languages li .right-paren {
+    margin-left: -2px
+}
