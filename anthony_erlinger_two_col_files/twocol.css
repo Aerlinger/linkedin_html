@@ -32,7 +32,7 @@
 
 #resume .empty-section {
     padding: 5px 0;
-    border: 1px dashed #cccccc !important;
+    border: 1px dashed #eee !important;
     margin: 10px 0 !important
 }
 
@@ -140,7 +140,8 @@
     float: left;
     width: 523px;
     padding: 5px 0 30px 25px;
-    border-left: 2px solid #6e849a
+    /*border-left: 2px solid #6e849a*/
+    border-left: 2px solid #EEE
 }
 
 #resume .summary, #resume .specialties, #resume .skills, #resume .positions, #resume .educations, #resume .honors, #resume .interests, #resume .associations, #resume .certifications, #resume .languages, #resume .patents, #resume .publications, #resume .error-section {
