@@ -1,7 +1,15 @@
 #resume #name {
     font-size: 36px;
-    width: 400px;
+    width: 300px;
     text-align: left;
+}
+
+#contact {
+    width: 200px !important;
+}
+
+.header {
+    padding-top: 15px;
 }
 
 
@@ -15,7 +23,7 @@
     -o-box-shadow: #dddddd 1px 1px 10px 6px;
     box-shadow: #dddddd 1px 1px 10px 6px;
     font-family: Georgia, "Times New Roman", Times, serif;
-    line-height: 22px
+    line-height: 18px
 }
 
 #resume .picture.empty-section {
@@ -118,7 +126,7 @@
 #resume .summary h2, #resume .specialties h2, #resume .skills h2, #resume .positions h2, #resume .educations h2, #resume .honors h2, #resume .interests h2, #resume .associations h2, #resume .certifications h2, #resume .languages h2, #resume .patents h2, #resume .publications h2, #resume .error-section h2, #resume .name {
     color: #8d97bb;
     float: left;
-    width: 180px;
+    width: 140px;
     text-align: right;
     font-size: 18px;
     font-weight: normal;
