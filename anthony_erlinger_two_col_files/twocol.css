@@ -1,5 +1,18 @@
+.content {
+    padding-top: 0px !important;
+}
+
+.content p:first-child {
+    margin: 0;
+}
+
+.dates {
+    font-size: 11px !important;
+    color: grey !important;
+}
+
 #resume #name {
-    font-size: 36px;
+    font-size: 24px;
     width: 300px;
     text-align: left;
 }
@@ -280,7 +293,7 @@
 #wrapper.print #resume .summary .content, #wrapper.print #resume .specialties .content, #wrapper.print #resume .skills .content, #wrapper.print #resume .positions .content, #wrapper.print #resume .educations .content, #wrapper.print #resume .honors .content, #wrapper.print #resume .interests .content, #wrapper.print #resume .associations .content, #wrapper.print #resume .certifications .content, #wrapper.print #resume .languages .content, #wrapper.print #resume .patents .content, #wrapper.print #resume .publications .content, #wrapper.print #resume .error-section .content, #wrapper.print #resume .contact {
     float: left;
     width: 718px;
-    padding: 5px 0 45px 37.5px;
+    padding: 0px 0 45px 37.5px;
     border-left: 2px solid #6e849a
 }
 
