@@ -13,6 +13,35 @@
     <link href="./anthony_erlinger_two_col_files/twocol.css" media="all" rel="stylesheet" type="text/css" class="resume-style">
   -->
   <style>
+    @page {
+      margin: 40pt 30pt 40pt 30pt !important;
+    }
+
+    body {
+      margin: 0px;
+    }
+    .experience {
+      display: block !important;
+      height: 300px !important;
+    }
+
+    .section.positions .text {
+      display: block !important;
+      height: 200px !important;
+    }
+
+    .publications .section-header .text{
+      display: block !important;
+      height: 400px !important;
+    }
+
+
+    .invisible {
+      /*display: hidden !important;*/
+      color: rgba(255, 255, 255, 0) !important;
+      /*color: transparent;*/
+    }
+
     span.authors {
       font-weight: bold;
     }
@@ -56,6 +85,10 @@
 
     .header {
         padding-top: 15px;
+    }
+
+    #resume #contact {
+      line-height: 14px;
     }
 
 
@@ -432,7 +465,6 @@
 <div id="wrapper">
   <div id="view">
     <div id="resume">
-    <div class="header"></div>
 
     <h1 class="name" id="name">
       <span class="first-name">Anthony</span>
@@ -502,15 +534,12 @@
     </div>
 
     <div class="clear"></div>
-
-
     <div class="section positions">
     <h2 class="section-header">
-      <span class="text">Experience</span>
+      <span class="experience text">Experience</span>
     </h2>
 
     <div class="content">
-
       <div class="position first">
         <div class="company-name">Handybook</div>
         <div class="dates">
@@ -571,17 +600,22 @@
             <strong>Technologies used include</strong> the iOS SDK, the Android SDK, Ruby/Rails (including
             custom tools and gems written in Ruby, MySQL/Memcached (Dalli), Redis/Sidekiq cluster, Amazon Web
             Services, Facebook SDK, HTML/CSS/JS website and browser-based API client.
-          </p>
 
-          <p>
-          <em>
-            Just Sing It is backed by top US and international investors, including Lerer Ventures, Tribeca
+          <em>Just Sing It is backed by top US and international investors, including Lerer Ventures, Tribeca
               Venture Partners, M8Capital, Eniac Ventures and DFR Asia.
           </em>
           </p>
         </div>
       </div>
+    </div>
 
+    <div class="clear"></div>
+    <div class="section positions">
+    <h2 class="section-header invisible">
+      <span class="text">Experience</span>
+    </h2>
+
+    <div class="content">
       <div class="position">
         <div class="company-name">Physics Academy</div>
 
@@ -610,7 +644,15 @@
           </p>
         </div>
       </div>
+    </div>
 
+    <div class="clear"></div>
+    <div class="section positions">
+      <h2 class="section-header invisible">
+        <span class="text">Experience</span>
+      </h2>
+
+    <div class="content">
       <div class="position">
         <div class="company-name">Homespree</div>
         <div class="dates">
@@ -637,8 +679,6 @@
 
       <div class="position">
         <div class="company-name">Columbia University</div>
-
-
         <div class="dates">
           <span class="start-month">09 /</span>
           <span class="start-year">2010</span>
@@ -704,10 +744,9 @@
       </div>
 
       </div>
-      <div class="clear"></div>
     </div>
 
-
+    <div class="clear"></div>
     <div class="section educations">
       <h2 class="section-header">
         <span class="text">Education</span>
@@ -716,7 +755,6 @@
       <div class="content">
         <div class="education first">
           <div class="school-name">Columbia University in the City of New York</div>
-
 
           <div class="dates">
             <span class="start-year">2010</span>
@@ -729,13 +767,11 @@
 
             <span class="program-separator">,</span>
             <span class="field-of-study">Electrical Engineering</span>
-
           </div>
-
         </div>
+
         <div class="education">
           <div class="school-name">UCLA</div>
-
 
           <div class="dates">
             <span class="start-year">2007</span>
@@ -748,14 +784,13 @@
 
             <span class="program-separator">,</span>
             <span class="field-of-study">Electrical Engineering</span>
-
           </div>
-
         </div>
       </div>
-      <div class="clear"></div>
     </div>
 
+    <!--
+    <div class="clear"></div>
     <div class="section languages">
       <h2 class="section-header">
         <span class="text">Languages</span>
@@ -942,6 +977,7 @@
       </div>
       <div class="clear"></div>
     </div>
+   -->
 
 
     <div class="section patents">
