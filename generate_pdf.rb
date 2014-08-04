@@ -6,7 +6,7 @@ dpi = (ARGV && ARGV.first) || 100
 DocRaptor.api_key "HbEeYNkfFXaqNUhLSzRa"
 
 pdf_html = File.read("anthony_erlinger_resume.html")
-test = true
+test = false
 
 File.open("anthony_erlinger_resume#{test ? "_test" : ""}.pdf", "w+b") do |f|
   f.write DocRaptor.create :document_content => pdf_html,
