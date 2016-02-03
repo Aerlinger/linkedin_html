@@ -47,6 +47,11 @@
       margin-bottom: 10px;
     }
 
+    .patent-title {
+      color: #555555;
+      font-weight: bold;;
+    }
+
     .experience {
       display: block !important;
       /*height: 300px !important;*/
@@ -60,12 +65,18 @@
       margin-bottom: 30px;
     }
 
+    .section.skills p {
+      font-size: 15px !important;
+    }
+
     .school-name {
+      color: #555555;
+      font-weight: bold;
       min-width: 500px;
     }
 
     .experience.text {
-      font-size: 13px;
+      font-size: 12px;
     }
 
     .section.positions .text {
@@ -75,20 +86,30 @@
 
     .publications .section-header .text {
       display: block !important;
-      /*height: 400px !important;*/
     }
 
     .invisible {
       color: rgba(255, 255, 255, 0) !important;
     }
 
-    span.authors {
+    .publisher {
+      float: left;
+      display: inline-block;
+      font-size: 14px;
       font-weight: bold;
     }
 
-    span.publisher {
-      font-size: 14px;
+    .publication-url {
+      float: right;
+      display: inline-block;
+    }
+
+    .authors {
+      display: inline-block;
       font-weight: bold;
+      float: left;
+      clear: both;
+      line-height: 15px;;
     }
 
     .content {
@@ -116,23 +137,25 @@
     }
 
     .dates {
-      font-size: 11px !important;
+      font-style: italic;
+      font-size: 12px !important;
       color: grey !important;
       float: right !important;
       position: relative;
-      top: 3px;
+      top: 0px;
     }
 
     ul.responsibilities {
       margin-top: 2px;
 
-      list-style-type: square;
+      list-style-type: none;
+      /*list-style-type: square;*/
       margin-bottom: 0;
     }
 
     ul.responsibilities li {
       line-height: 13px;
-      margin-bottom: 3px;
+      margin-bottom: 6px;
     }
 
     /*ul.responsibilities li:before {*/
@@ -263,7 +286,7 @@
     }
 
     #resume ol, #resume ul {
-      padding: 0 0 8px 15px
+      padding: 0 0 8px 8px
     }
 
     #resume li {
@@ -338,12 +361,14 @@
     }
 
     #resume .position .company-name, #resume .education .school-name, #resume .certification .certification-name, #resume .patent .patent-title, #resume .publication {
-      line-height: 22px;
+      line-height: 19px;
       font-size: 15px;
       float: left
     }
 
     .publication-title {
+      color: #555555;
+      font-weight: bold;
       display: inline-block;
       font-size: 16px;
     }
@@ -351,14 +376,14 @@
     #resume .position .title, #resume .education .program {
       font-size: 13px;
       color: #555555;
-      font-style: italic;
+      /*font-style: italic;*/
       clear: both
     }
 
     #resume .publication .publication-details, #resume .patent .patent-details {
       clear: both;
       color: #555555;
-      font-style: italic;
+      /*font-style: italic;*/
     }
 
     #resume .position .dates, #resume .education .dates, #resume .certification .dates, #resume .patent .dates, #resume .publication .dates {
@@ -367,6 +392,7 @@
     }
 
     .publication-summary {
+      margin-top: 5px;
       line-height: 14px;
     }
 
@@ -485,7 +511,25 @@
     }
 
     .publication {
-      margin-bottom: 10px;
+      margin-bottom: 20px;
+    }
+
+    .publication:last-child {
+      margin-bottom: 5px !important;
+    }
+
+    .unibull {
+      color: #8d97bb;
+      font-size: 9px;
+      line-height: 13px;
+      /* padding-right: 5px; */
+      vertical-align: middle;
+      position: relative;
+      /* top: -2px; */
+      height: 10px;
+      float: left;
+      text-indent: -11px;
+      display: inline-block;
     }
 
     #wrapper.print #resume .contact, #wrapper.print #resume .name {
@@ -625,9 +669,10 @@
         <h2 class="section-title">Skills</h2>
 
         <!--<div class="section skills">-->
-
         <!--<div class="content">-->
-        <p></p>
+        <p>
+          I've been fortunate to have had a diverse career that
+        </p>
         <!--</div>-->
         <!--</div>-->
       </div>
@@ -654,7 +699,10 @@
 
             <div class="job-summary">
               <ul class="responsibilities">
-                <li>Responsible for all technology and development aspects of the company.</li>
+                <li>
+                  <span class="unibull">◆</span>
+                  Responsible for all technology and software development aspects of the company.
+                </li>
                 <li></li>
               </ul>
             </div>
@@ -675,21 +723,21 @@
               <span class="end-year">2015</span>
             </div>
 
-            <div class="title">Data Science Instructor (Part time role)</div>
+            <div class="title">Data Science Course Instructor (Part time temporary position)</div>
 
             <div class="job-summary">
               <ul class="responsibilities">
-                <li>Developed instructional materials and taught machine learning concepts and for working with data
-                  using Python, SQL, and the Unix shell.
+                <li>
+                  <span class="unibull">◆</span>
+                  Lectured for three hours twice per week. Covered topics included mining and analyzing data, designing and evaluating models for supervised and unsupervised machine learning problems, and managing data in a production environment.
                 </li>
-                <li>Expanded supplementary materials and introduced new and more frequent class feedback mechanisms.
+                <li>
+                  <span class="unibull">◆</span>
+                  Developed curriculum and all instructional materials used throughout the course. Technologies used included Python, SQL, and the Unix shell.
                 </li>
-                <li>Lectured for three hours twice per week on concepts including cleaning, processing data, and
-                  querying data as well as building and evaluating models for machine learning.
-                </li>
-                <li>Met with students regularly on a one-on-one basis to help with learning concepts and the class
-                  project.
-                </li>
+                <li>
+                  <span class="unibull">◆</span>
+                  Met with students regularly on a one-on-one basis to help with learning concepts and the class project.
                 </li>
               </ul>
             </div>
@@ -714,14 +762,23 @@
 
             <div class="job-summary">
               <ul class="responsibilities">
-                <li>Responsible for all data related initiatives within the company. Specifically, this included making
-                  data accessible and useful in a scalable manner to enable strategic and operational objectives.
+                <li>
+                  <span class="unibull">◆</span>
+                  Responsibilities encompassed all data related initiatives within the company. Specifically, this included making
+                  data accessible and useful in a scalable manner to enable the company's strategic and operational objectives.
                 </li>
-                <li>Led development, deployment, and management of company's internal ETL data pipeline.</li>
-                <li>Built new custom dashboarding and data visualization tools utilized across all domains of the
+                <li>
+                  <span class="unibull">◆</span>
+                  Led development, deployment, and management of company's internal ETL data pipeline.
+                </li>
+                <li>
+                  <span class="unibull">◆</span>
+                  Built new custom dashboarding and data visualization tools utilized across all domains of the
                   company for reporting and business intelligence.
                 </li>
-                <li>Developed and employed "surge pricing" algorithms responsible for adjusting prices based on
+                <li>
+                  <span class="unibull">◆</span>
+                  Developed and employed "surge pricing" algorithms responsible for adjusting prices based on
                   fluctuating supply and demand over time.
                 </li>
               </ul>
@@ -749,14 +806,20 @@
 
             <div class="job-summary">
               <ul class="responsibilities">
-                <li>Led development of product from concept to launch. Responsibilities included managing team
+                <li>
+                  <span class="unibull">◆</span>
+                  Led development of product from concept to launch. Responsibilities included managing team
                   building and hiring decisions, design and implementation of the core architecture patterns, and
                   development philosopies
                 </li>
-                <li>Designed, developed, tested, and deployed REST API serving both web and mobile (iOS & Android)
+                <li>
+                  <span class="unibull">◆</span>
+                  Designed, developed, tested, and deployed REST API serving both web and mobile (iOS & Android)
                   frontends
                 </li>
-                <li>Managed development operations (dev-ops) for a multi-server architecture running Ruby on Rails,
+                <li>
+                  <span class="unibull">◆</span>
+                  Managed development operations (dev-ops) for a multi-server architecture running Ruby on Rails,
                   MySQL, Redis, HAProxy and Sphinx running on AWS
                 </li>
               </ul>
@@ -805,15 +868,17 @@
 
             <div class="job-summary">
               <ul class="responsibilities">
-                <li>Led development of product from concept to launch. Responsibilities included managing team
-                  building and hiring decisions, design and implementation of the core architecture patterns, and
-                  development philosopies
+                <li>
+                  <span class="unibull">◆</span>
+                  Designed and carried out experiments to study electrical properties of single-walled carbon nanotubes (SW-CNTs) in biological environments.
                 </li>
-                <li>Designed, developed, tested, and deployed REST API serving both web and mobile (iOS & Android)
-                  frontends
+                <li>
+                  <span class="unibull">◆</span>
+
                 </li>
-                <li>Managed development operations (dev-ops) for a multi-server architecture running Ruby on Rails,
-                  MySQL, Redis, HAProxy and Sphinx running on AWS
+                <li>
+                  <span class="unibull">◆</span>
+                  Assisted in managing and maintaining the lab's self-hosted server network responsible for running simulations and data analysis.
                 </li>
               </ul>
 
@@ -854,7 +919,7 @@
         </h2>
 
         <div class="content">
-          <div class="position">
+          <div class="position" style="margin-bottom: 15px;">
 
             <div class="dates">
               <span class="start-month">04 /</span>
@@ -863,8 +928,8 @@
               <span class="is-current">Present</span>
             </div>
 
-            <!--<div class="title"><a href="http://physicsacademy.com">physicsacademy.com</a></div>-->
             <div class="title">Founder &amp; Creator</div>
+            <a href="http://www.physicsacademy.com/">http://www.physicsacademy.com/</a>
 
             <div class="job-summary">
               <p>Physics Academy’s mission is to make learning physics fun and accessible to
@@ -887,7 +952,6 @@
               <span class="is-current">Present</span>
             </div>
 
-            <!--<div class="title"><a href="http://physicsacademy.com">physicsacademy.com</a></div>-->
             <div class="title">Founder &amp; Creator</div>
 
             <div class="job-summary">
@@ -922,7 +986,8 @@
               <span class="degree">Master of Science (M.Sc.)</span>
 
               <span class="program-separator">,</span>
-              <span class="field-of-study">Electrical Engineering</span>
+              <span class="field-of-study">Electrical Engineering.</span>
+              <span>3.7 GPA</span>
             </div>
           </div>
 
@@ -940,6 +1005,7 @@
 
               <span class="program-separator">,</span>
               <span class="field-of-study">Electrical Engineering</span>
+              <span>3.4 GPA</span>
             </div>
           </div>
         </div>
@@ -974,17 +1040,12 @@
             <div class="patent-details">
             <span class="inventors">
               <span class="inventor">
-                Anthony Erlinger, Ting-Wei Su, Aydogan Ozcan
+                <b>Anthony Erlinger, Ting-Wei Su, Aydogan Ozcan</b>
               </span>
             </span>
-              <br/>
 
-            <span class="patent-url">
-              <a
-                      href="http://www.google.com/patents/US20120148141"
-                      target="_blank">
-                Google Patents Page
-              </a>
+            <span class="patent-url publication-url">
+              Patent link: <a href="http://goo.gl/edSSes" target="_blank">http://goo.gl/edSSes</a>
             </span>
             </div>
 
@@ -1021,35 +1082,34 @@
             </div>
 
             <div class="publication-details">
-              <span class="publisher">Lab on a chip</span>
-              <br/>
-              <span class="authors">
-              <!--<span class="authors-label">Authors:</span>-->
+              <div class="publisher">Lab on a chip</div>
+
+              <span class="publication-url">
+                Publication link: <a href="http://goo.gl/g8heh5" target="_blank">http://goo.gl/g8heh5</a>
+              </span>
+
+              <div class="authors">
                 <span class="author">Anthony Erlinger,</span>
                 <span class="author">Sungkyu Seo,</span>
                 <span class="author">Ting-Wei Su,</span>
                 <span class="author">Derek Tseng</span>
-              </span>
-
-              <br/>
-
-            <span class="publication-url">
-              <a href="http://pubs.rsc.org/en/Content/ArticleLanding/2009/LC/b813943a" target="_blank">http://pubs.rsc.org/en/Content/ArticleLanding/2009/LC/b813943a</a>
-            </span>
+              </div>
             </div>
+            <div class="clear"></div>
 
-            <div class="publication-summary"><p>We experimentally illustrate a lensfree holographic imaging platform
-              to
-              perform on-chip cytometry. By controlling the spatial coherence of the illumination source, we record a
-              2D holographic diffraction pattern of each cell or micro-particle on a chip using a high resolution
-              sensor array that has approximately 2 microm pixel size.</p>
+            <div class="publication-summary">
+              <p>
+                We experimentally illustrate a lensfree holographic imaging platform
+                to perform on-chip cytometry. By controlling the spatial coherence of the illumination source, we record
+                a 2D holographic diffraction pattern of each cell or micro-particle on a chip using a high resolution
+                sensor array that has approximately 2 microm pixel size.
+              </p>
             </div>
           </div>
 
           <div class="publication">
-            <div class="publication-title" style="max-width: 500px;">High-throughput lensfree imaging and characterization of a heterogeneous
-              cell
-              solution on a chip
+            <div class="publication-title" style="max-width: 500px;">
+              High-throughput lensfree imaging and characterization of a heterogeneous cell solution on a chip
             </div>
 
             <div class="dates">
@@ -1060,29 +1120,30 @@
             <div class="publication-details">
               <span class="publisher">Biotechnology and Bioengineering</span>
 
-              <!--<span class="dot-separator">·</span>-->
-            <span class="authors">
-              <!--<span class="authors-label">Authors:</span>-->
-              <span class="author">Anthony Erlinger,</span>
-              <span class="author">Sungkyu Seo,</span>
-              <span class="author">Ting-Wei Su</span>
-            </span>
+              <span class="publication-url">
+                Publication link: <a href="http://goo.gl/szhOkH" target="_blank">http://goo.gl/szhOkH</a>
+              </span>
 
-            <span class="publication-url">
-              <a href="http://www.ncbi.nlm.nih.gov/pubmed/18853435" target="_blank">http://www.ncbi.nlm.nih.gov/pubmed/18853435</a>
-            </span>
+              <span class="authors">
+                <span class="author">Anthony Erlinger,</span>
+                <span class="author">Sungkyu Seo,</span>
+                <span class="author">Ting-Wei Su</span>
+              </span>
             </div>
+            <div class="clear"></div>
 
-            <div class="publication-summary"><p>A high-throughput on-chip imaging platform that can rapidly monitor
-              and
-              characterize various cell types within a heterogeneous solution over a depth-of-field of approximately 4
-              mm and a field-of-view of approximately 10 cm(2) is introduced. </p>
+            <div class="publication-summary">
+              <p>
+                A high-throughput on-chip imaging platform that can rapidly monitor and
+                characterize various cell types within a heterogeneous solution over a depth-of-field of approximately
+                4mm and a field-of-view of approximately 10 cm(2) is introduced.
+              </p>
             </div>
           </div>
 
           <div class="publication">
-            <div class="publication-title">Multi-Color LUCAS: Lensfree Holographic Imaging for On-Chip Cytometry and
-              Diagnostics
+            <div class="publication-title">
+              Multi-Color LUCAS: Lensfree Holographic Imaging for On-Chip Cytometry and Diagnostics
             </div>
 
             <div class="dates">
@@ -1090,26 +1151,25 @@
             </div>
 
             <div class="publication-details">
-              <span class="publisher">Cellular and Molecular Bioengineering</span>
-              <br/>
-              <!--<span class="dot-separator">·</span>-->
+              <div class="publisher">Cellular and Molecular Bioengineering</div>
 
-            <span class="authors">
-              <!--<span class="authors-label">Authors:</span>-->
-                <span class="author">Anthony Erlinger,</span>
-                <span class="author">Sungkyu Seo,</span>
-                <span class="author">Ting-wei Su</span>
-            </span>
-
-              <br>
-            <span class="publication-url">
-              <a href="http://link.springer.com/article/10.1007%2Fs12195-008-0018-6?LI=true" target="_blank">http://link.springer.com/article/10.1007%2Fs12195-008-0018-6?LI=true</a>
-            </span>
+              <div class="publication-url">
+                Publication link: <a href="http://goo.gl/2LQsMl" target="_blank">http://goo.gl/2LQsMl</a>
+              </div>
+              <span class="authors">
+                  <span class="author">Anthony Erlinger,</span>
+                  <span class="author">Sungkyu Seo,</span>
+                  <span class="author">Ting-wei Su</span>
+              </span>
             </div>
+            <div class="clear"></div>
 
-            <div class="publication-summary"><p>We illustrate a high-throughput on-chip imaging platform that can
-              rapidly monitor greater than 50,000 cells within a homogenous solution over a ﬁeld-of-view (FOV) of
-              several square centimeters. </p>
+            <div class="publication-summary">
+              <p>
+                We illustrate a high-throughput on-chip imaging platform that can
+                rapidly monitor greater than 50,000 cells within a homogenous solution over a ﬁeld-of-view (FOV) of
+                several square centimeters.
+              </p>
             </div>
           </div>
         </div>
@@ -1118,7 +1178,7 @@
 
       <div class="section patents mt-20">
         <h2 class="section-header section-title">
-          <span class="text">Awards</span>
+          <span class="text">Awards & Honors</span>
         </h2>
 
         <div class="content">
@@ -1129,16 +1189,52 @@
               <span class="start-year">2011</span>
             </div>
 
+            <div class="patent-summary">
+              <p>
+                A compact and light-weight lens-free platform to conduct automated semen
+                analysis is disclosed. The device employs holographic on-chip imaging and does not require any lenses,
+                lasers or other bulky optical components to achieve phase and amplitude imaging of sperm a relatively
+                large field-of-view with an effective numerical aperture of approximately 0.2.
+              </p>
+            </div>
+          </div>
 
+          <br>
 
-            <div class="patent-summary"><p>
-              A compact and light-weight lens-free platform to conduct automated semen
-              analysis is disclosed. The device employs holographic on-chip imaging and does not require any lenses,
-              lasers or other bulky optical components to achieve phase and amplitude imaging of sperm a relatively
-              large field-of-view with an effective numerical aperture of approximately 0.2.
-            </p>
+          <div class="patent first">
+            <div class="patent-title">NSF Graduate Research Fellowship Program (IGERT)</div>
+
+            <div class="dates">
+              <span class="start-year">2010</span>
             </div>
 
+            <div class="patent-summary">
+              <p>
+                A compact and light-weight lens-free platform to conduct automated semen
+                analysis is disclosed. The device employs holographic on-chip imaging and does not require any lenses,
+                lasers or other bulky optical components to achieve phase and amplitude imaging of sperm a relatively
+                large field-of-view with an effective numerical aperture of approximately 0.2.
+              </p>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="patent first">
+            <div class="patent-title">NSF Graduate Research Fellowship Program (IGERT)</div>
+
+            <div class="dates">
+              <span class="start-year">2010</span>
+            </div>
+
+            <div class="patent-summary">
+              <p>
+                A compact and light-weight lens-free platform to conduct automated semen
+                analysis is disclosed. The device employs holographic on-chip imaging and does not require any lenses,
+                lasers or other bulky optical components to achieve phase and amplitude imaging of sperm a relatively
+                large field-of-view with an effective numerical aperture of approximately 0.2.
+              </p>
+            </div>
           </div>
         </div>
         <div class="clear"></div>
