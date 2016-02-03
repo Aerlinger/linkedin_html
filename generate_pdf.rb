@@ -3,7 +3,7 @@ require 'doc_raptor'
 
 dpi = (ARGV && ARGV.first) || 100
 
-DocRaptor.api_key "HbEeYNkfFXaqNUhLSzRa"
+DocRaptor.api_key "q9QDDuz8wVYO0gkxygzZ"
 
 pdf_html = File.read("anthony_erlinger_resume.html")
 test = false

@@ -7,36 +7,75 @@
 
   <title>Anthony Erlinger Resume</title>
 
-  <!--<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>-->
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
-  <!--
-    <link href="./anthony_erlinger_two_col_files/twocol.css" media="all" rel="stylesheet" type="text/css" class="resume-style">
-  -->
   <style>
     @page {
       margin-top: 50pt !important;
       margin-bottom: 20pt !important;
       margin-left: 30pt !important;
-      margin-right: 30pt !important;
+      margin-right: 40pt !important;
+    }
+
+    @font-face {
+      font-family: 'Trajan-Pro';
+      src: url('./fonts/TrajanProRegular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-smooth: always;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    p {
+      font-weight: 300 !important;
+      font-size: 12px;
+    }
+
+    li {
+      font-size: 12px;
     }
 
     body {
       margin: 0px;
     }
 
+    .clear {
+      clear: both !important;
+    }
+
+    .education {
+      margin-bottom: 10px;
+    }
+
     .experience {
       display: block !important;
-      height: 300px !important;
+      /*height: 300px !important;*/
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: "Trajan-Pro";
+    }
+
+    .section.skills {
+      margin-bottom: 30px;
+    }
+
+    .school-name {
+      min-width: 500px;
+    }
+
+    .experience.text {
+      font-size: 13px;
     }
 
     .section.positions .text {
       display: block !important;
-      height: 200px !important;
+      /*height: 200px !important;*/
     }
 
-    .publications .section-header .text{
+    .publications .section-header .text {
       display: block !important;
-      height: 400px !important;
+      /*height: 400px !important;*/
     }
 
     .invisible {
@@ -48,16 +87,17 @@
     }
 
     span.publisher {
+      font-size: 14px;
       font-weight: bold;
     }
 
     .content {
       padding-top: 0 !important;
-      width: 628px !important;
+      width: 619px !important;
     }
 
     .content p:first-child {
-        margin: 0;
+      margin: 0;
     }
 
     .content p {
@@ -65,400 +105,480 @@
     }
 
     .section-header {
-      width: 100px !important;
+      /*width: 100px !important;*/
+      width: 120px !important;
+
+    }
+
+    .section-title {
+      text-align: left !important;
+      color: black !important;
     }
 
     .dates {
-        font-size: 11px !important;
-        color: grey !important;
+      font-size: 11px !important;
+      color: grey !important;
       float: right !important;
+      position: relative;
+      top: 3px;
     }
 
+    ul.responsibilities {
+      margin-top: 2px;
+
+      list-style-type: square;
+      margin-bottom: 0;
+    }
+
+    ul.responsibilities li {
+      line-height: 13px;
+      margin-bottom: 3px;
+    }
+
+    /*ul.responsibilities li:before {*/
+    /*color: red;*/
+    /*content:"·";*/
+    /*font-size: 20px;*/
+    /*vertical-align:middle;*/
+    /*line-height: 10px;*/
+    /*}*/
+
     #resume #name {
-        font-size: 24px;
-        width: 300px;
-        text-align: left;
+      font-size: 24px;
+      width: 300px;
+      font-weight: 300;
+      text-align: left;
     }
 
     #contact {
-        width: 200px !important;
-      margin-bottom: 30px;
+      width: 200px !important;
     }
 
     .header {
-        padding-top: 15px;
+      padding-top: 15px;
     }
 
     #resume #contact {
       line-height: 14px;
     }
 
-
     #resume {
-        font-size: 12px;
-        width: 780px;
-        padding: 0;
-        /*padding-top: 40px;*/
-        /*padding-bottom: 20px;*/
-        margin: 0 auto;
-        /*-moz-box-shadow: #dddddd 1px 1px 10px 6px;*/
-        /*-webkit-box-shadow: #dddddd 1px 1px 10px 6px;*/
-        /*-o-box-shadow: #dddddd 1px 1px 10px 6px;*/
-        /*box-shadow: #dddddd 1px 1px 10px 6px;*/
-        font-family: Georgia, "Times New Roman", Times, serif;
-        line-height: 18px
+      font-size: 12px;
+      width: 780px;
+      padding: 0;
+      /*padding-top: 40px;*/
+      /*padding-bottom: 20px;*/
+      margin: 0 auto;
+      /*-moz-box-shadow: #dddddd 1px 1px 10px 6px;*/
+      /*-webkit-box-shadow: #dddddd 1px 1px 10px 6px;*/
+      /*-o-box-shadow: #dddddd 1px 1px 10px 6px;*/
+      /*box-shadow: #dddddd 1px 1px 10px 6px;*/
+      font-family: Garamond, Georgia, "Times New Roman", Times, serif;
+      line-height: 18px
     }
 
     #resume .picture.empty-section {
-        margin: 0 !important
+      margin: 0 !important
     }
 
     #resume .empty-section {
-        padding: 5px 0;
-        border: 1px dashed #eee !important;
-        margin: 10px 0 !important
+      padding: 5px 0;
+      border: 1px dashed #eee !important;
+      margin: 10px 0 !important
+    }
+
+    h2 {
+      font-size: 17px;
     }
 
     #resume .empty-section h2 {
-        opacity: 0.3;
-        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30)
+      opacity: 0.3;
+      -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30)
     }
 
     #resume .empty-section-contents {
-        height: 25px;
-        padding: 0 5px !important
+      height: 25px;
+      padding: 0 5px !important
     }
 
     #resume .empty-blurb {
-        float: left;
-        margin-right: 10px;
-        opacity: 0.3;
-        -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
-        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30)
+      float: left;
+      margin-right: 10px;
+      opacity: 0.3;
+      -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30)
     }
 
     #resume .why {
-        float: left;
-        height: 16px;
-        width: 16px;
-        background: url('/images/../images/icons.png?1344924637') 0 -258px transparent no-repeat;
-        margin-top: 3px
+      float: left;
+      height: 16px;
+      width: 16px;
+      background: url('/images/../images/icons.png?1344924637') 0 -258px transparent no-repeat;
+      margin-top: 3px
     }
 
     #resume .date-separator {
-        padding: 0 3px
+      padding: 0 3px
     }
 
     #resume .picture {
-        width: 80px;
-        height: 80px
+      width: 80px;
+      height: 80px
     }
 
     #resume .patent-office {
-        text-transform: uppercase
+      text-transform: uppercase
     }
 
     #resume .dot-separator {
-        padding: 0 8px
+      padding: 0 8px
     }
 
     #resume .content .hidden-section, #resume .content .hidden-subsection {
-        padding-top: 5px;
-        padding-bottom: 5px
+      padding-top: 5px;
+      padding-bottom: 5px
     }
 
     #resume .content .hidden-section .empty-blurb, #resume .content .hidden-subsection .empty-blurb {
-        font-size: 12px;
-        float: none;
-        display: inline
+      font-size: 12px;
+      float: none;
+      display: inline
     }
 
     #resume .content .hidden-section .why, #resume .content .hidden-subsection .why {
-        background: url('/images/../images/icons.png?1344924637') 0 -251px transparent no-repeat;
-        float: none;
-        display: inline;
-        padding: 8px
+      background: url('/images/../images/icons.png?1344924637') 0 -251px transparent no-repeat;
+      float: none;
+      display: inline;
+      padding: 8px
     }
 
     #resume .content li.hidden-section, #resume .content li.hidden-subsection {
-        padding-top: 0;
-        padding-bottom: 0
+      padding-top: 0;
+      padding-bottom: 0
     }
 
     #resume a {
-        color: #8d97bb;
+      color: #8d97bb;
     }
 
     #resume ol, #resume ul {
-        padding: 0 0 10px 15px
+      padding: 0 0 8px 15px
     }
 
     #resume li {
-        /*padding-bottom: 5px*/
+      /*padding-bottom: 5px*/
     }
 
     #resume .picture, #resume .contact h2, #resume .contact .label, #resume .headline, #resume .address .label {
-        display: none
+      display: none
     }
 
     #resume .first-name {
-        margin-right: 5px
+      margin-right: 5px
     }
 
-    #resume .summary h2, #resume .specialties h2, #resume .skills h2, #resume .positions h2, #resume .educations h2, #resume .honors h2, #resume .interests h2, #resume .associations h2, #resume .certifications h2, #resume .languages h2, #resume .patents h2, #resume .publications h2, #resume .error-section h2, #resume .name {
-        color: #8d97bb;
-        float: left;
-        width: 140px;
-        text-align: right;
-        font-size: 18px;
-        font-weight: normal;
-        /*text-transform: lowercase;*/
-        margin: 0;
-        padding: 0 25px 0 0
+    .mt-20 {
+      margin-top: 20px;
     }
 
-    #resume .summary .content, #resume .specialties .content, #resume .skills .content, #resume .positions .content, #resume .educations .content, #resume .honors .content, #resume .interests .content, #resume .associations .content, #resume .certifications .content, #resume .languages .content, #resume .patents .content, #resume .publications .content, #resume .error-section .content, #resume .contact {
-        font-size: 12px;
-        float: left;
-        width: 523px;
-        padding: 5px 0 30px 25px;
-        /*border-left: 2px solid #6e849a*/
-        border-left: 2px solid #EEE
+    .section-title {
+      clear: both;
+      margin-top: 20px;
+      font-weight: 500;
+    }
+
+    #resume .summary h2, #resume .specialties h2, #resume .positions h2, #resume .educations h2, #resume .honors h2, #resume .interests h2, #resume .associations h2, #resume .certifications h2, #resume .languages h2, #resume .patents h2, #resume .publications h2, #resume .error-section h2, #resume .name {
+      color: #8d97bb;
+      float: left;
+      width: 140px;
+      text-align: right;
+      font-size: 17px;
+      font-weight: normal;
+      /*text-transform: lowercase;*/
+      margin: 0;
+      padding: 0 18px 0 0
+    }
+
+    #resume .summary .content, #resume .specialties .content, #resume .skills .content, #resume .positions .content, #resume .educations .content, #resume .honors .content, #resume .interests .content, #resume .associations .content, #resume .certifications .content, #resume .languages .content, #resume .patents .content, #resume .publications .content, #resume .error-section .content {
+      font-size: 12px;
+      float: left;
+      width: 523px;
+      padding: 5px 0 20px 18px;
+      /*border-left: 2px solid #6e849a*/
+      border-left: 1px solid #EEE
     }
 
     #resume .summary, #resume .specialties, #resume .skills, #resume .positions, #resume .educations, #resume .honors, #resume .interests, #resume .associations, #resume .certifications, #resume .languages, #resume .patents, #resume .publications, #resume .error-section {
-        clear: both;
-        overflow: visible;
-        width: 100%
+      clear: both;
+      overflow: visible;
+      width: 100%
     }
 
     #resume .contact, #resume .summary, #resume .specialties {
-        font-size: 14px
+      font-size: 14px
+    }
+
+    .contact {
+      /*font-weight: bold;*/
+      font-size: 16px !important;
     }
 
     #resume .contact, #resume .name {
-        padding-top: 10px !important;
-        font-size: 24px !important;
-        color: black;
+      padding-top: 10px !important;
+      font-size: 24px !important;
+      color: black;
     }
 
     #resume .footer {
-        /*border-right: 2px solid #6e849a;*/
-        height: 70px;
-        clear: both;
-        width: 225px;
+      /*border-right: 2px solid #6e849a;*/
+      height: 70px;
+      clear: both;
+      width: 225px;
     }
 
-    #resume .position .company-name, #resume .education .school-name, #resume .certification .certification-name, #resume .patent .patent-title, #resume .publication .publication-title {
-        line-height: 22px;
-        font-size: 20px;
-        float: left
+    #resume .position .company-name, #resume .education .school-name, #resume .certification .certification-name, #resume .patent .patent-title, #resume .publication {
+      line-height: 22px;
+      font-size: 15px;
+      float: left
+    }
+
+    .publication-title {
+      display: inline-block;
+      font-size: 16px;
     }
 
     #resume .position .title, #resume .education .program {
-        color: #555555;
-        font-style: italic;
-        clear: both
+      font-size: 13px;
+      color: #555555;
+      font-style: italic;
+      clear: both
     }
 
     #resume .publication .publication-details, #resume .patent .patent-details {
+      clear: both;
       color: #555555;
       font-style: italic;
     }
 
     #resume .position .dates, #resume .education .dates, #resume .certification .dates, #resume .patent .dates, #resume .publication .dates {
-        font-size: 14px;
-        float: right
+      font-size: 14px;
+      float: right
+    }
+
+    .publication-summary {
+      line-height: 14px;
     }
 
     #resume .position .job-summary, #resume .education .notes, #resume .education .activities, #resume .patent .patent-summary, #resume .publication .publication-summary {
-        margin-top: 5px;
-        clear: both
+      /*margin-top: 5px;*/
+      clear: both
     }
 
     #resume .position, #resume .education, #resume .certification, #resume .patent, #resume .publication {
-        margin-bottom: 30px
+      /*margin-bottom: 15px*/
     }
 
     #resume .positions .content, #resume .educations .content, #resume .certifications .content, #resume .patents .content, #resume .publications .content {
-        padding-bottom: 0 !important
+      padding-bottom: 0 !important
     }
 
     #resume .skill-attributes, #resume .language-attributes {
-        display: none
+      display: none
     }
 
     #resume .patent .patent-details, #resume .publication .publication-details, #resume .certification .certificate-details {
-        font-size: 11px
+      font-size: 11px
     }
 
     #resume .skills li, #resume .languages li {
-        float: left;
-        width: 145px;
-        padding-right: 20px;
-        word-wrap: break-word
+      float: left;
+      width: 145px;
+      padding-right: 20px;
+      word-wrap: break-word
     }
 
     #resume .skills li .skill-name, #resume .languages li .skill-name {
-        font-size: 12px
+      font-size: 12px
     }
 
     #resume .skills li .left-paren, #resume .skills li .right-paren, #resume .skills li .proficiency, #resume .skills li .comma, #resume .skills li .years, #resume .languages li .left-paren, #resume .languages li .right-paren, #resume .languages li .proficiency, #resume .languages li .comma, #resume .languages li .years {
-        font-size: 10px;
-        color: #555555
+      font-size: 10px;
+      color: #555555
     }
 
     #resume .skills li .comma, #resume .languages li .comma {
-        margin-left: -2px
+      margin-left: -2px
     }
 
     #resume .skills li .left-paren, #resume .languages li .left-paren {
-        margin-right: -2px
+      margin-right: -2px
     }
 
     #resume .skills li .right-paren, #resume .languages li .right-paren {
-        margin-left: -2px
+      margin-left: -2px
     }
 
     #wrapper.print #resume {
-        font-size: 18px;
-        width: 1100px;
-        padding: 0;
-        -moz-box-shadow: white 0 0 0 0;
-        -webkit-box-shadow: white 0 0 0 0;
-        -o-box-shadow: white 0 0 0 0;
-        box-shadow: white 0 0 0 0;
-        font-family: Georgia, "Times New Roman", Times, serif;
-        line-height: 33px
+      font-size: 18px;
+      width: 1100px;
+      padding: 0;
+      -moz-box-shadow: white 0 0 0 0;
+      -webkit-box-shadow: white 0 0 0 0;
+      -o-box-shadow: white 0 0 0 0;
+      box-shadow: white 0 0 0 0;
+      font-family: Georgia, "Times New Roman", Times, serif;
+      line-height: 33px
     }
 
     #wrapper.print #resume a {
-        color: #8d97bb
+      color: #8d97bb
     }
 
     #wrapper.print #resume ol, #wrapper.print #resume ul {
-        padding: 0 0 10px 15px
+      padding: 0 0 10px 15px
     }
 
     #wrapper.print #resume li {
-        padding-bottom: 7.5px
+      padding-bottom: 7.5px
     }
 
     #wrapper.print #resume .picture, #wrapper.print #resume .contact h2, #wrapper.print #resume .contact .label, #wrapper.print #resume .headline, #wrapper.print #resume .address .label {
-        display: none
+      display: none
     }
 
     #wrapper.print #resume .first-name {
-        margin-right: 7.5px
+      margin-right: 7.5px
+    }
+
+    .job-summary p:last-child {
+      margin-bottom: 0;
     }
 
     #wrapper.print #resume .summary h2, #wrapper.print #resume .specialties h2, #wrapper.print #resume .skills h2, #wrapper.print #resume .positions h2, #wrapper.print #resume .educations h2, #wrapper.print #resume .honors h2, #wrapper.print #resume .interests h2, #wrapper.print #resume .associations h2, #wrapper.print #resume .certifications h2, #wrapper.print #resume .languages h2, #wrapper.print #resume .patents h2, #wrapper.print #resume .publications h2, #wrapper.print #resume .error-section h2, #wrapper.print #resume .name {
-        color: #8d97bb;
-        float: left;
-        width: 300px;
-        text-align: right;
-        font-size: 34.5px;
-        font-weight: normal;
-        text-transform: lowercase;
-        margin: 0;
-        padding: 0 37.5px 0 0
+      color: #8d97bb;
+      float: left;
+      width: 300px;
+      text-align: right;
+      font-size: 34.5px;
+      font-weight: normal;
+      text-transform: lowercase;
+      margin: 0;
+      padding: 0 37.5px 0 0
     }
 
     #wrapper.print #resume .summary .content, #wrapper.print #resume .specialties .content, #wrapper.print #resume .skills .content, #wrapper.print #resume .positions .content, #wrapper.print #resume .educations .content, #wrapper.print #resume .honors .content, #wrapper.print #resume .interests .content, #wrapper.print #resume .associations .content, #wrapper.print #resume .certifications .content, #wrapper.print #resume .languages .content, #wrapper.print #resume .patents .content, #wrapper.print #resume .publications .content, #wrapper.print #resume .error-section .content, #wrapper.print #resume .contact {
-        float: left;
-        width: 718px;
-        padding: 0px 0 45px 37.5px;
-        border-left: 2px solid #6e849a
+      float: left;
+      width: 718px;
+      padding: 0px 0 45px 37.5px;
+      border-left: 2px solid #6e849a
     }
 
     #wrapper.print #resume .summary, #wrapper.print #resume .specialties, #wrapper.print #resume .skills, #wrapper.print #resume .positions, #wrapper.print #resume .educations, #wrapper.print #resume .honors, #wrapper.print #resume .interests, #wrapper.print #resume .associations, #wrapper.print #resume .certifications, #wrapper.print #resume .languages, #wrapper.print #resume .patents, #wrapper.print #resume .publications, #wrapper.print #resume .error-section {
-        clear: both;
-        overflow: visible;
-        width: 100%
+      clear: both;
+      overflow: visible;
+      width: 100%
     }
 
     #wrapper.print #resume .contact, #wrapper.print #resume .summary, #wrapper.print #resume .specialties {
-        font-size: 21px
+      font-size: 21px
+    }
+
+    .publication {
+      margin-bottom: 10px;
     }
 
     #wrapper.print #resume .contact, #wrapper.print #resume .name {
-        padding-top: 120px !important
+      padding-top: 120px !important
     }
 
     #wrapper.print #resume .footer {
-        border-right: 2px solid #6e849a;
-        height: 105px;
-        clear: both;
-        width: 337.5px
+      border-right: 2px solid #6e849a;
+      height: 105px;
+      clear: both;
+      width: 337.5px
     }
 
     #wrapper.print #resume .position .company-name, #wrapper.print #resume .education .school-name, #wrapper.print #resume .certification .certification-name, #wrapper.print #resume .patent .patent-title, #wrapper.print #resume .publication .publication-title {
-        line-height: 12px;
-        font-size: 30px;
-        float: left
+      line-height: 12px;
+      font-size: 30px;
+      float: left
+    }
+
+    .title {
+      font-weight: bold;
+      font-size: 14px !important;
+    }
+
+    .position .title {
+      min-width: 500px;
+      display: inline-block;
     }
 
     #wrapper.print #resume .position .title, #wrapper.print #resume .education .program, #wrapper.print #resume .certification .certificate-details, #wrapper.print #resume .patent .patent-details, #wrapper.print #resume .publication .publication-details {
-        color: #555555;
-        font-style: italic;
-        clear: both
+      color: #555555;
+      font-style: italic;
+      float: left;
+      /*clear: both*/
     }
 
     #wrapper.print #resume .position .dates, #wrapper.print #resume .education .dates, #wrapper.print #resume .certification .dates, #wrapper.print #resume .patent .dates, #wrapper.print #resume .publication .dates {
-        font-size: 21px;
-        float: right
+      font-size: 21px;
+      float: right
     }
 
     #wrapper.print #resume .position .job-summary, #wrapper.print #resume .education .notes, #wrapper.print #resume .education .activities, #wrapper.print #resume .patent .patent-summary, #wrapper.print #resume .publication .publication-summary {
-        margin-top: 7.5px;
-        clear: both;
+      margin-top: 7.5px;
+      clear: both;
     }
 
     #wrapper.print #resume .position, #wrapper.print #resume .education, #wrapper.print #resume .certification, #wrapper.print #resume .patent, #wrapper.print #resume .publication {
-        margin-bottom: 45px;
+      margin-bottom: 45px;
     }
 
     #wrapper.print #resume .positions .content, #wrapper.print #resume .educations .content, #wrapper.print #resume .certifications .content, #wrapper.print #resume .patents .content, #wrapper.print #resume .publications .content {
-        padding-bottom: 0 !important;
+      padding-bottom: 0 !important;
     }
 
     #wrapper.print #resume .skill-attributes, #wrapper.print #resume .language-attributes {
-        display: none;
+      display: none;
     }
 
     #wrapper.print #resume .patent .patent-details, #wrapper.print #resume .publication .publication-details, #wrapper.print #resume .certification .certificate-details {
-        font-size: 16.5px;
+      font-size: 16.5px;
     }
 
     #wrapper.print #resume .skills li, #wrapper.print #resume .languages li {
-        float: left;
-        width: 240px;
-        padding-right: 15px;
-        word-wrap: break-word;
+      float: left;
+      width: 240px;
+      padding-right: 15px;
+      word-wrap: break-word;
     }
 
     #wrapper.print #resume .skills li .skill-name, #wrapper.print #resume .languages li .skill-name {
-        font-size: 16px;
+      font-size: 16px;
     }
 
     #wrapper.print #resume .skills li .left-paren, #wrapper.print #resume .skills li .right-paren, #wrapper.print #resume .skills li .proficiency, #wrapper.print #resume .skills li .comma, #wrapper.print #resume .skills li .years, #wrapper.print #resume .languages li .left-paren, #wrapper.print #resume .languages li .right-paren, #wrapper.print #resume .languages li .proficiency, #wrapper.print #resume .languages li .comma, #wrapper.print #resume .languages li .years {
-        font-size: 11px;
-        color: #555555;
+      font-size: 11px;
+      color: #555555;
     }
 
     #wrapper.print #resume .skills li .comma, #wrapper.print #resume .languages li .comma {
-        margin-left: -2px;
+      margin-left: -2px;
     }
 
     #wrapper.print #resume .skills li .left-paren, #wrapper.print #resume .languages li .left-paren {
-        margin-right: -2px;
+      margin-right: -2px;
     }
 
     #wrapper.print #resume .skills li .right-paren, #wrapper.print #resume .languages li .right-paren {
-        margin-left: -2px;
+      margin-left: -2px;
     }
 
+    .job-summary ul li {
+      margin-left: 15px;
+    }
   </style>
 </head>
 
@@ -468,582 +588,433 @@
   <div id="view">
     <div id="resume">
 
-    <h1 class="name" id="name">
-      <span class="first-name">Anthony</span>
-      <span class="last-name">Erlinger</span>
-    </h1>
+      <h1 class="name" id="name">
+        <span class="first-name">Anthony</span>
+        <span class="last-name">Erlinger</span>
+      </h1>
 
-    <div class="content contact" id="contact"
-         style="display: block; float: right; text-align: right; font-size: 11px !important; border: 0;">
-      <div class="url-personal member-url-resource">
-        <span class="label">Email:</span>
+      <div class="content contact" id="contact"
+           style="display: block; float: right; text-align: right; font-size: 14px !important; border: 0;">
+        <div class="url-personal member-url-resource">
+          <span class="label">Email:</span>
             <span class="content"><a href="mailto:aerlinger.com" rel="nofollow"
                                      target="_blank">aerlinger@gmail.com</a></span>
-      </div>
+        </div>
 
-      <!-- Hide/ShowPhone number: -->
+        <!-- Hide/ShowPhone number: -->
 
-      <div class="url-personal member-url-resource">
-        <span class="label">Phone:</span>
-        <span class="content"><a rel="nofollow" target="_blank">805-403-6404</a></span>
-      </div>
+        <div class="url-personal member-url-resource">
+          <span class="label">Phone:</span>
+          <span class="content"><a rel="nofollow" target="_blank">805-403-6404</a></span>
+        </div>
 
-      <div class="url-personal member-url-resource">
-        <span class="label">Personal site:</span>
+        <div class="url-personal member-url-resource">
+          <span class="label">Personal site:</span>
             <span class="content"><a href="http://aerlinger.com/" rel="nofollow"
                                      target="_blank">http://aerlinger.com</a></span>
+        </div>
+
+        <div class="url-portfolio member-url-resource">
+          <span class="label">Portfolio:</span>
+          <span class="content"><a href="https://github.com/aerlinger" rel="nofollow" target="_blank">https://github.com/aerlinger</a></span>
+        </div>
       </div>
+      <!--<div class="clear"></div>-->
 
-      <div class="url-portfolio member-url-resource">
-        <span class="label">Portfolio:</span>
-        <span class="content"><a href="http://github.com/aerlinger" rel="nofollow" target="_blank">http://github.com/aerlinger</a></span>
-      </div>
-    </div>
-    <!--<div class="clear"></div>-->
-    <br />
-    <br />
-    <br />
-    <br />
+      <div class="section skills">
+        <h2 class="section-title">Skills</h2>
 
-    <div class="section summary">
-      <h2 class="section-header">
-        <span class="text">Summary</span>
-      </h2>
+        <!--<div class="section skills">-->
 
-      <div class="content">
-        <p>
-          I seek purpose and fulfillment through devotion to the craft of software engineering. Throughout my career
-          I've faced a diverse array of problems in both commercial and scientific applications and have successfully
-          led teams in delivering a venture-backed product from concept to launch.
-        </p>
-
-        <p>
-          My greatest accomplishments have arisen from circumstances where I have been intellectually engaged in the
-          pursuit of solving a problem within a collaborative environment. Please feel free to reach out to me, or to
-          visit my website (http://aerlinger.com) for more specific examples of work I've done.
-        </p>
+        <!--<div class="content">-->
+        <p></p>
+        <!--</div>-->
+        <!--</div>-->
       </div>
 
       <div class="clear"></div>
-    </div>
 
-    <div class="section skills">
-      <h2 class="section-header">
-        <span class="text">Skills</span>
-      </h2>
+      <h2 class="section-title">Work Experience</h2>
 
-      <div class="content">
-        <p>Applied experience with Rails/Ruby, JS/Node/AJAX, Python, SQL, HTML/CSS, Unix, AWS, Chef, HTML/CSS, Mobile
-          (both web and Android), R, Matlab, Julia. I have also made open source contributions within the Rails and
-          Julia communities.</p>
-      </div>
-    </div>
+      <div class="section positions">
+        <h2 class="section-header">
+          <span class="experience text">Legal Hero</span>
+        </h2>
 
-    <div class="clear"></div>
-    <div class="section positions">
-    <h2 class="section-header">
-      <span class="experience text">Experience</span>
-    </h2>
+        <div class="content">
+          <div class="position first">
+            <div class="dates">
+              <span class="start-month">08 /</span>
+              <span class="start-year">2014</span>
+              <span class="date-separator">-</span>
+              <span class="is-current">Present</span>
+            </div>
 
-    <div class="content">
-      <div class="position first">
-        <div class="company-name">Handybook</div>
-        <div class="dates">
-          <span class="start-month">02 /</span>
-          <span class="start-year">2014</span>
-          <span class="date-separator">-</span>
-          <span class="is-current">Present</span>
-        </div>
+            <div class="title">Co-founder & Director of Engineering</div>
 
-        <div class="title"><a href="http://handybook.com">handybook.com</a></div>
-        <div class="title">Director of Data Science</div>
-
-        <div class="job-summary">
-
-          <p>Led development and deployment of company's internal toolset for data analysis. Also implemented
-            reporting tools to provide business intelligence within cross-functional teams in a rapidly growing
-            company. Designed and implemented algorithms for effective job dispatch and scheduling for managing
-            supply
-            and demand between a two-sided marketplace. Communicated high level information regarding the state
-            of the company with fellow managers in
-            other domains of the company. This included engineering, operations, customer service, marketing,
-            and product development. Also conducted regular interviews with candidates for various roles within
-            the company and contributed
-            to decisions regarding the hiring of key candidates.</p>
-
-          <p><strong>Technologies used include:</strong> R, Ruby on Rails, MySQL and MongoDB, Redis/Sidekiq,
-            Tableau, Amazon Web Services, HTML/CSS/JS for custom dashboard development
-          </p>
-        </div>
-      </div>
-
-      <div class="position">
-        <div class="company-name">Just Sing It</div>
-        <div class="dates">
-          <span class="start-month">02 /</span>
-          <span class="start-year">2013</span>
-          <span class="date-separator">-</span>
-          <span class="end-month">2 /</span>
-          <span class="end-year">2014</span>
-        </div>
-
-        <div class="title"><a href="http://justsingit.com">justsingit.com</a></div>
-        <div class="title">Chief Technology Officer</div>
-
-        <div class="job-summary">
-          <p>Led team of 5 Agile engineers from pre-concept through product launch. Also drove key decisions
-            regarding the development of mobile, web, and backend software architecture. This included the
-            design and implementation of the core architecture patterns, establishing the team's development
-            philosophies, and planning the team's sprint cycles for rapid development. I Was also responsible
-            for developing, testing, optimizing, and deploying a cross-platform REST API in Rails for our mobile
-            and web based platforms.
-            These responsibilities included the configuration, deployment, security, and monitoring of a
-            dynamically scalable, multi-server, multi-paradigm back end architecture which was hosted on Amazon
-            Web Services.
-          </p>
-
-          <p>
-            <strong>Technologies used include</strong> the iOS SDK, the Android SDK, Ruby/Rails (including
-            custom tools and gems written in Ruby, MySQL/Memcached (Dalli), Redis/Sidekiq cluster, Amazon Web
-            Services, Facebook SDK, HTML/CSS/JS website and browser-based API client.
-
-          <em>Just Sing It is backed by top US and international investors, including Lerer Ventures, Tribeca
-              Venture Partners, M8Capital, Eniac Ventures and DFR Asia.
-          </em>
-          </p>
-        </div>
-      </div>
-    </div>
-    </div>
-
-    <div class="clear"></div>
-    <div class="section positions">
-    <h2 class="section-header invisible">
-      <span class="text">Experience</span>
-    </h2>
-
-    <div class="content">
-      <div class="position">
-        <div class="company-name">Physics Academy</div>
-
-        <div class="dates">
-          <span class="start-month">04 /</span>
-          <span class="start-year">2012</span>
-          <span class="date-separator">-</span>
-          <span class="is-current">Present</span>
-        </div>
-
-        <div class="title"><a href="http://physicsacademy.com">physicsacademy.com</a></div>
-        <div class="title">Founder &amp; Creator</div>
-
-        <div class="job-summary">
-          <p>Physics Academy’s mission is to make learning physics fun and accessible to
-            anyone in the world by developing new technologies for interactive education. We accomplish our
-            mission
-            by fostering a community oriented around visual demonstrations, puzzles and competitions while
-            providing
-            educators a rich online medium to deliver lessons and assessments.
-          </p>
-
-          <p>
-            The Physics Academy core site is built in Rails. Live simulations are built in Javascript with
-            support by Node.js and Mocha for development.
-          </p>
-        </div>
-      </div>
-    </div>
-    </div>
-
-    <div class="clear"></div>
-    <div class="section positions">
-      <h2 class="section-header invisible">
-        <span class="text">Experience</span>
-      </h2>
-
-    <div class="content">
-      <div class="position">
-        <div class="company-name">Homespree</div>
-        <div class="dates">
-          <span class="start-month">01 /</span>
-          <span class="start-year">2013</span>
-          <span class="date-separator">-</span>
-          <span class="end-month">11 /</span>
-          <span class="end-year">2013</span>
-        </div>
-
-        <div class="title"><a href="http://myhomespree.com">myhomespree.com</a></div>
-        <div class="title">Co-founder, CTO</div>
-
-        <div class="job-summary">
-
-          <p>Leveraging technology to improve the stressful and inefficient home improvement
-            process.
-
-            Homespree is the smart way to get home improvement estimates. The app allows you to get estimates
-            from multiple contractors right on your smartphone.
-          </p>
-        </div>
-      </div>
-
-      <div class="position">
-        <div class="company-name">Columbia University</div>
-        <div class="dates">
-          <span class="start-month">09 /</span>
-          <span class="start-year">2010</span>
-          <span class="date-separator">-</span>
-          <span class="end-month">05 /</span>
-          <span class="end-year">2013</span>
-        </div>
-
-        <div class="title">Ph.D. Candidate (former)</div>
-
-        <div class="job-summary"><p>Developing novel devices to analyze the kinetics and conductive properties of
-          bio-molecular systems such as DNA and proteins at small time scales. Additional responsibilities include
-          managing and maintaining lab servers, software licenses, and Linux client machines.</p>
-        </div>
-      </div>
-
-      <div class="position">
-        <div class="company-name">Columbia University</div>
-        <div class="dates">
-          <span class="start-month">09 /</span>
-          <span class="start-year">2010</span>
-          <span class="date-separator">-</span>
-          <span class="end-month">05 /</span>
-          <span class="end-year">2013</span>
-        </div>
-
-        <div class="title">Graduate Research Assistant</div>
-      </div>
-
-      <div class="position">
-        <div class="company-name">UCLA</div>
-
-        <div class="dates">
-          <span class="start-month">09 /</span>
-          <span class="start-year">2007</span>
-          <span class="date-separator">-</span>
-          <span class="end-month">07 /</span>
-          <span class="end-year">2010</span>
-        </div>
-
-        <div class="title">Research Associate</div>
-
-        <div class="job-summary"><p>Developed high-throughput image processing algorithms for cell type recognition
-          from microscope images.</p>
-        </div>
-      </div>
-
-      <div class="position">
-        <div class="company-name">UC Berkeley</div>
-        <div class="dates">
-          <span class="start-month">06 /</span>
-          <span class="start-year">2008</span>
-          <span class="date-separator">-</span>
-          <span class="end-month">08 /</span>
-          <span class="end-year">2008</span>
-        </div>
-
-        <div class="title">EECS Research Intern</div>
-
-        <div class="job-summary"><p>Applied computational electromagnetic simulations to optimize the design of
-          nanometer-scale grating antenna.</p>
-        </div>
-      </div>
-
-      </div>
-    </div>
-
-    <div class="clear"></div>
-    <div class="section educations">
-      <h2 class="section-header">
-        <span class="text">Education</span>
-      </h2>
-
-      <div class="content">
-        <div class="education first">
-          <div class="school-name">Columbia University in the City of New York</div>
-
-          <div class="dates">
-            <span class="start-year">2010</span>
-            <span class="date-separator">-</span>
-            <span class="end-year">2011</span>
-          </div>
-
-          <div class="program">
-            <span class="degree">Master of Science (M.Sc.)</span>
-
-            <span class="program-separator">,</span>
-            <span class="field-of-study">Electrical Engineering</span>
+            <div class="job-summary">
+              <ul class="responsibilities">
+                <li>Responsible for all technology and development aspects of the company.</li>
+                <li></li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div class="education">
-          <div class="school-name">UCLA</div>
+        <h2 class="section-header">
+          <span class="experience text">General Assembly</span>
+        </h2>
 
-          <div class="dates">
-            <span class="start-year">2007</span>
-            <span class="date-separator">-</span>
-            <span class="end-year">2010</span>
-          </div>
+        <div class="content">
+          <div class="position first">
+            <div class="dates">
+              <span class="start-month">02 /</span>
+              <span class="start-year">2015</span>
+              <span class="date-separator">-</span>
+              <span class="end-month">05 /</span>
+              <span class="end-year">2015</span>
+            </div>
 
-          <div class="program">
-            <span class="degree">Bachelor of Science (B.S.)</span>
+            <div class="title">Data Science Instructor (Part time role)</div>
 
-            <span class="program-separator">,</span>
-            <span class="field-of-study">Electrical Engineering</span>
+            <div class="job-summary">
+              <ul class="responsibilities">
+                <li>Developed instructional materials and taught machine learning concepts and for working with data
+                  using Python, SQL, and the Unix shell.
+                </li>
+                <li>Expanded supplementary materials and introduced new and more frequent class feedback mechanisms.
+                </li>
+                <li>Lectured for three hours twice per week on concepts including cleaning, processing data, and
+                  querying data as well as building and evaluating models for machine learning.
+                </li>
+                <li>Met with students regularly on a one-on-one basis to help with learning concepts and the class
+                  project.
+                </li>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
+
+        <h2 class="section-header">
+          <span class="experience text">Handy (Handybook)</span>
+        </h2>
+
+        <div class="content">
+          <div class="position first">
+            <div class="dates">
+              <span class="start-month">02 /</span>
+              <span class="start-year">2014</span>
+              <span class="date-separator">-</span>
+              <span class="end-month">08 /</span>
+              <span class="end-year">2014</span>
+            </div>
+
+            <div class="title">Director of Data Science</div>
+
+            <div class="job-summary">
+              <ul class="responsibilities">
+                <li>Responsible for all data related initiatives within the company. Specifically, this included making
+                  data accessible and useful in a scalable manner to enable strategic and operational objectives.
+                </li>
+                <li>Led development, deployment, and management of company's internal ETL data pipeline.</li>
+                <li>Built new custom dashboarding and data visualization tools utilized across all domains of the
+                  company for reporting and business intelligence.
+                </li>
+                <li>Developed and employed "surge pricing" algorithms responsible for adjusting prices based on
+                  fluctuating supply and demand over time.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="section-header">
+          <span class="experience text">Anyone Game</span>
+
+          <div class="clear"></div>
+        </h2>
+
+        <div class="content">
+          <div class="position">
+            <div class="dates">
+              <span class="start-month">02 /</span>
+              <span class="start-year">2013</span>
+              <span class="date-separator">-</span>
+              <span class="end-month">02 /</span>
+              <span class="end-year">2014</span>
+            </div>
+
+            <div class="title">Co-founder & Chief Technology Officer</div>
+
+            <div class="job-summary">
+              <ul class="responsibilities">
+                <li>Led development of product from concept to launch. Responsibilities included managing team
+                  building and hiring decisions, design and implementation of the core architecture patterns, and
+                  development philosopies
+                </li>
+                <li>Designed, developed, tested, and deployed REST API serving both web and mobile (iOS & Android)
+                  frontends
+                </li>
+                <li>Managed development operations (dev-ops) for a multi-server architecture running Ruby on Rails,
+                  MySQL, Redis, HAProxy and Sphinx running on AWS
+                </li>
+              </ul>
+
+              <!--<p>Led team of 5 Agile engineers from pre-concept through product launch. Also drove key decisions-->
+              <!--regarding the development of mobile, web, and backend software architecture.  I Was also responsible-->
+              <!--for developing, testing, optimizing, and deploying a cross-platform REST API in Rails for our mobile-->
+              <!--and web based platforms.-->
+              <!--These responsibilities included the configuration, deployment, security, and monitoring of a-->
+              <!--dynamically scalable, multi-server, multi-paradigm back end architecture which was hosted on Amazon-->
+              <!--Web Services.-->
+              <!--</p>-->
+
+              <!--<p>-->
+              <!--<strong>Technologies used include</strong> the iOS SDK, the Android SDK, Ruby/Rails (including-->
+              <!--custom tools and gems written in Ruby, MySQL/Memcached (Dalli), Redis/Sidekiq cluster, Amazon Web-->
+              <!--Services, Facebook SDK, HTML/CSS/JS website and browser-based API client.-->
+
+              <!--<em>Just Sing It is backed by top US and international investors, including Lerer Ventures, Tribeca-->
+              <!--Venture Partners, M8Capital, Eniac Ventures and DFR Asia.-->
+              <!--</em>-->
+              </p>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <h2 class="section-header">
+          <span class="experience text">Columbia University</span>
+
+          <div class="clear"></div>
+        </h2>
+
+        <div class="content" style="height: 94px;">
+          <div class="position">
+            <div class="dates">
+              <span class="start-month">02 /</span>
+              <span class="start-year">2013</span>
+              <span class="date-separator">-</span>
+              <span class="end-month">02 /</span>
+              <span class="end-year">2014</span>
+            </div>
+
+            <div class="title">Ph.D. Candidate</div>
+
+            <div class="job-summary">
+              <ul class="responsibilities">
+                <li>Led development of product from concept to launch. Responsibilities included managing team
+                  building and hiring decisions, design and implementation of the core architecture patterns, and
+                  development philosopies
+                </li>
+                <li>Designed, developed, tested, and deployed REST API serving both web and mobile (iOS & Android)
+                  frontends
+                </li>
+                <li>Managed development operations (dev-ops) for a multi-server architecture running Ruby on Rails,
+                  MySQL, Redis, HAProxy and Sphinx running on AWS
+                </li>
+              </ul>
+
+              <!--<p>Led team of 5 Agile engineers from pre-concept through product launch. Also drove key decisions-->
+              <!--regarding the development of mobile, web, and backend software architecture.  I Was also responsible-->
+              <!--for developing, testing, optimizing, and deploying a cross-platform REST API in Rails for our mobile-->
+              <!--and web based platforms.-->
+              <!--These responsibilities included the configuration, deployment, security, and monitoring of a-->
+              <!--dynamically scalable, multi-server, multi-paradigm back end architecture which was hosted on Amazon-->
+              <!--Web Services.-->
+              <!--</p>-->
+
+              <!--<p>-->
+              <!--<strong>Technologies used include</strong> the iOS SDK, the Android SDK, Ruby/Rails (including-->
+              <!--custom tools and gems written in Ruby, MySQL/Memcached (Dalli), Redis/Sidekiq cluster, Amazon Web-->
+              <!--Services, Facebook SDK, HTML/CSS/JS website and browser-based API client.-->
+
+              <!--<em>Just Sing It is backed by top US and international investors, including Lerer Ventures, Tribeca-->
+              <!--Venture Partners, M8Capital, Eniac Ventures and DFR Asia.-->
+              <!--</em>-->
+              </p>
+            </div>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+        </div>
+
+        <div class="clear"></div>
       </div>
-    </div>
 
+      <h2 class="section-title">Projects</h2>
 
-    <!--
-    <div class="clear"></div>
-    <div class="section languages">
-      <h2 class="section-header">
-        <span class="text">Languages</span>
-      </h2>
-
-      <div class="content">
-        <ul class="languages-list">
-          <li class="language first">
-            <span class="language-name">Ruby</span>
-
-      <span class="language-attributes">
-        <span class="left-paren">(</span>
-          <span class="proficiency">Native or bilingual proficiency</span>
-
-        <span class="right-paren">)</span>
-      </span>
-
-          </li>
-          <li class="language">
-            <span class="language-name">Javascript</span>
-
-      <span class="language-attributes">
-        <span class="left-paren">(</span>
-          <span class="proficiency">Native or bilingual proficiency</span>
-
-        <span class="right-paren">)</span>
-      </span>
-
-          </li>
-          <li class="language">
-            <span class="language-name">Python</span>
-
-      <span class="language-attributes">
-        <span class="left-paren">(</span>
-          <span class="proficiency">Native or bilingual proficiency</span>
-
-        <span class="right-paren">)</span>
-      </span>
-
-          </li>
-          <li class="language">
-            <span class="language-name">Java</span>
-
-      <span class="language-attributes">
-        <span class="left-paren">(</span>
-          <span class="proficiency">Native or bilingual proficiency</span>
-
-        <span class="right-paren">)</span>
-      </span>
-
-          </li>
-          <li class="language">
-            <span class="language-name">Actionscript</span>
-
-      <span class="language-attributes">
-        <span class="left-paren">(</span>
-          <span class="proficiency">Full professional proficiency</span>
-
-        <span class="right-paren">)</span>
-      </span>
-
-          </li>
-          <li class="language">
-            <span class="language-name">CoffeeScript</span>
-
-      <span class="language-attributes">
-        <span class="left-paren">(</span>
-          <span class="proficiency">Native or bilingual proficiency</span>
-
-        <span class="right-paren">)</span>
-      </span>
-
-          </li>
-          <li class="language">
-            <span class="language-name">C</span>
-
-      <span class="language-attributes">
-        <span class="left-paren">(</span>
-          <span class="proficiency">Full professional proficiency</span>
-
-        <span class="right-paren">)</span>
-      </span>
-
-          </li>
-          <li class="language">
-            <span class="language-name">C++</span>
-
-      <span class="language-attributes">
-        <span class="left-paren">(</span>
-          <span class="proficiency">Full professional proficiency</span>
-
-        <span class="right-paren">)</span>
-      </span>
-
-          </li>
-          <li class="language">
-            <span class="language-name">Objective C</span>
-
-      <span class="language-attributes">
-        <span class="left-paren">(</span>
-          <span class="proficiency">Professional working proficiency</span>
-
-        <span class="right-paren">)</span>
-      </span>
-
-          </li>
-          <li class="language">
-            <span class="language-name">Shell</span>
-
-      <span class="language-attributes">
-        <span class="left-paren">(</span>
-          <span class="proficiency">Full professional proficiency</span>
-
-        <span class="right-paren">)</span>
-      </span>
-
-          </li>
-          <li class="language">
-            <span class="language-name">MATLAB</span>
-
-      <span class="language-attributes">
-        <span class="left-paren">(</span>
-          <span class="proficiency">Full professional proficiency</span>
-
-        <span class="right-paren">)</span>
-      </span>
-
-          </li>
-          <li class="language">
-            <span class="language-name">R</span>
-
-      <span class="language-attributes">
-        <span class="left-paren">(</span>
-          <span class="proficiency">Full professional proficiency</span>
-
-        <span class="right-paren">)</span>
-      </span>
-
-          </li>
-          <li class="language">
-            <span class="language-name">Assembly (6502)</span>
-
-      <span class="language-attributes">
-        <span class="left-paren">(</span>
-          <span class="proficiency">Native or bilingual proficiency</span>
-
-        <span class="right-paren">)</span>
-      </span>
-
-          </li>
-          <li class="language">
-            <span class="language-name">PHP</span>
-
-      <span class="language-attributes">
-        <span class="left-paren">(</span>
-          <span class="proficiency">Professional working proficiency</span>
-
-        <span class="right-paren">)</span>
-      </span>
-
-          </li>
-          <li class="language">
-            <span class="language-name">CUDA</span>
-
-      <span class="language-attributes">
-        <span class="left-paren">(</span>
-          <span class="proficiency">Professional working proficiency</span>
-
-        <span class="right-paren">)</span>
-      </span>
-
-          </li>
-          <li class="language">
-            <span class="language-name">Julia</span>
-
-            <span class="language-attributes">
-              <span class="left-paren">(</span>
-                <span class="proficiency">Professional working proficiency</span>
-
-              <span class="right-paren">)</span>
-            </span>
-          </li>
-        </ul>
-      </div>
       <div class="clear"></div>
-    </div>
-   -->
 
-    <div class="clear"></div>
-    <div class="section patents">
-      <h2 class="section-header">
+      <div class="section positions">
+        <h2 class="section-header">
+          <span class="experience text">Physics Academy</span>
+        </h2>
+
+        <div class="content">
+          <div class="position">
+
+            <div class="dates">
+              <span class="start-month">04 /</span>
+              <span class="start-year">2012</span>
+              <span class="date-separator">-</span>
+              <span class="is-current">Present</span>
+            </div>
+
+            <!--<div class="title"><a href="http://physicsacademy.com">physicsacademy.com</a></div>-->
+            <div class="title">Founder &amp; Creator</div>
+
+            <div class="job-summary">
+              <p>Physics Academy’s mission is to make learning physics fun and accessible to
+                anyone in the world by developing new technologies for interactive education. </p>
+            </div>
+          </div>
+        </div>
+
+        <h2 class="section-header">
+          <span class="experience text">Circuit Box</span>
+        </h2>
+
+        <div class="content">
+          <div class="position">
+
+            <div class="dates">
+              <span class="start-month">04 /</span>
+              <span class="start-year">2012</span>
+              <span class="date-separator">-</span>
+              <span class="is-current">Present</span>
+            </div>
+
+            <!--<div class="title"><a href="http://physicsacademy.com">physicsacademy.com</a></div>-->
+            <div class="title">Founder &amp; Creator</div>
+
+            <div class="job-summary">
+              <p>Physics Academy’s mission is to make learning physics fun and accessible to
+                anyone in the world by developing new technologies for interactive education. </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+
+
+      <div class="section educations  mt-20">
+        <h2 class="section-header section-title">
+          <span class="">Education</span>
+        </h2>
+
+        <div class="content">
+          <div class="education first">
+            <div class="school-name">Columbia University in the City of New York</div>
+
+            <div class="dates">
+              <span class="start-year">2010</span>
+              <span class="date-separator">-</span>
+              <span class="end-year">2011</span>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="program">
+              <span class="degree">Master of Science (M.Sc.)</span>
+
+              <span class="program-separator">,</span>
+              <span class="field-of-study">Electrical Engineering</span>
+            </div>
+          </div>
+
+          <div class="education">
+            <div class="school-name">University of California, Los Angeles</div>
+
+            <div class="dates">
+              <span class="start-year">2007</span>
+              <span class="date-separator">-</span>
+              <span class="end-year">2010</span>
+            </div>
+
+            <div class="program">
+              <span class="degree">Bachelor of Science (B.S.)</span>
+
+              <span class="program-separator">,</span>
+              <span class="field-of-study">Electrical Engineering</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+
+
+      <div class="clear"></div>
+
+      <!--
+      <h2 class="section-title">
         <span class="text">Patents</span>
       </h2>
+      -->
 
-      <div class="content">
-        <div class="patent first">
-          <div class="patent-title">Compact Automated Semen Analysis Platform using Lens-Free On-Chip Microscopy</div>
+      <div class="section patents mt-20">
+        <h2 class="section-header section-title">
+          <span class="text">Patents</span>
+        </h2>
 
-          <div class="dates">
-            <span class="start-month">12 /</span>
-            <span class="start-year">2011</span>
-          </div>
+        <div class="content">
+          <div class="patent first">
+            <div class="patent-title">Compact Automated Semen Analysis Platform using Lens-Free On-Chip Microscopy
+            </div>
 
-          <div class="patent-details">
+            <div class="dates">
+              <span class="start-month">12 /</span>
+              <span class="start-year">2011</span>
+            </div>
+
+            <div class="patent-details">
             <span class="inventors">
               <span class="inventor">
                 Anthony Erlinger, Ting-Wei Su, Aydogan Ozcan
               </span>
             </span>
-            <br/>
+              <br/>
 
             <span class="patent-url">
               <a
-                href = "http://www.google.com/patents/US20120148141"
-                target = "_blank">
+                      href="http://www.google.com/patents/US20120148141"
+                      target="_blank">
                 Google Patents Page
               </a>
             </span>
-          </div>
+            </div>
 
-          <div class="patent-summary"><p>A compact and light-weight lens-free platform to conduct automated semen
-            analysis is disclosed. The device employs holographic on-chip imaging and does not require any lenses,
-            lasers or other bulky optical components to achieve phase and amplitude imaging of sperm a relatively
-            large field-of-view with an effective numerical aperture of approximately 0.2. A series of digital image
-            frames is obtained of the sample. Digital subtraction of the consecutive lens-free frames, followed by
-            processing of the reconstructed phase images, enables automated quantification of the count, the speed
-            and the dynamic trajectories of motile sperm, while summation of the same frames permits counting of
-            immotile sperm.</p>
-          </div>
+            <div class="patent-summary"><p>
+              A compact and light-weight lens-free platform to conduct automated semen
+              analysis is disclosed. The device employs holographic on-chip imaging and does not require any lenses,
+              lasers or other bulky optical components to achieve phase and amplitude imaging of sperm a relatively
+              large field-of-view with an effective numerical aperture of approximately 0.2.
+            </p>
+            </div>
 
+          </div>
         </div>
+        <div class="clear"></div>
       </div>
-      <div class="clear"></div>
-    </div>
 
-
-    <div class="section publications">
-      <h2 class="section-header">
+      <!--
+      <h2 class="section-title">
         <span class="text">Publications</span>
       </h2>
+      -->
 
-      <div class="content">
-        <div class="publication first">
-          <div class="publication-title">Lensfree Holographic Imaging for On-chip Cytometry and Diagnostics</div>
+      <div class="section publications  mt-20">
+        <h2 class="section-header section-title">
+          <span class="text">Publications</span>
+        </h2>
+
+        <div class="content">
+          <div class="publication first">
+            <div class="publication-title">Lensfree Holographic Imaging for On-chip Cytometry and Diagnostics</div>
             <div class="dates">
               <span class="start-month">12 /</span>
               <span class="start-year">2008</span>
@@ -1051,21 +1022,13 @@
 
             <div class="publication-details">
               <span class="publisher">Lab on a chip</span>
-              <br />
+              <br/>
               <span class="authors">
               <!--<span class="authors-label">Authors:</span>-->
-                <span class="author">
-                  Anthony Erlinger,
-                </span>
-                <span class="author">
-                  Sungkyu Seo,
-                </span>
-                <span class="author">
-                  Ting-Wei Su,
-                </span>
-                <span class="author">
-                  Derek Tseng
-                </span>
+                <span class="author">Anthony Erlinger,</span>
+                <span class="author">Sungkyu Seo,</span>
+                <span class="author">Ting-Wei Su,</span>
+                <span class="author">Derek Tseng</span>
               </span>
 
               <br/>
@@ -1073,107 +1036,121 @@
             <span class="publication-url">
               <a href="http://pubs.rsc.org/en/Content/ArticleLanding/2009/LC/b813943a" target="_blank">http://pubs.rsc.org/en/Content/ArticleLanding/2009/LC/b813943a</a>
             </span>
+            </div>
+
+            <div class="publication-summary"><p>We experimentally illustrate a lensfree holographic imaging platform
+              to
+              perform on-chip cytometry. By controlling the spatial coherence of the illumination source, we record a
+              2D holographic diffraction pattern of each cell or micro-particle on a chip using a high resolution
+              sensor array that has approximately 2 microm pixel size.</p>
+            </div>
           </div>
 
-          <div class="publication-summary"><p>We experimentally illustrate a lensfree holographic imaging platform to
-            perform on-chip cytometry. By controlling the spatial coherence of the illumination source, we record a
-            2D holographic diffraction pattern of each cell or micro-particle on a chip using a high resolution
-            sensor array that has approximately 2 microm pixel size.</p>
-          </div>
-        </div>
+          <div class="publication">
+            <div class="publication-title" style="max-width: 500px;">High-throughput lensfree imaging and characterization of a heterogeneous
+              cell
+              solution on a chip
+            </div>
 
-        <div class="publication">
-          <div class="publication-title">High-throughput lensfree imaging and characterization of a heterogeneous cell
-            solution on a chip
-          </div>
+            <div class="dates">
+              <span class="start-month">09 /</span>
+              <span class="start-year">2008</span>
+            </div>
 
-          <div class="dates">
-            <span class="start-month">09 /</span>
-            <span class="start-year">2008</span>
-          </div>
+            <div class="publication-details">
+              <span class="publisher">Biotechnology and Bioengineering</span>
 
-          <div class="publication-details">
-            <span class="publisher">Biotechnology and Bioengineering</span>
-
-            <!--<span class="dot-separator">·</span>-->
-            <br />
+              <!--<span class="dot-separator">·</span>-->
             <span class="authors">
               <!--<span class="authors-label">Authors:</span>-->
-              <span class="author">
-                Anthony Erlinger,
-              </span>
-              <span class="author">
-                Sungkyu Seo,
-              </span>
-              <span class="author">
-                Ting-Wei Su
-              </span>
+              <span class="author">Anthony Erlinger,</span>
+              <span class="author">Sungkyu Seo,</span>
+              <span class="author">Ting-Wei Su</span>
             </span>
-
-            <br/>
 
             <span class="publication-url">
               <a href="http://www.ncbi.nlm.nih.gov/pubmed/18853435" target="_blank">http://www.ncbi.nlm.nih.gov/pubmed/18853435</a>
             </span>
+            </div>
+
+            <div class="publication-summary"><p>A high-throughput on-chip imaging platform that can rapidly monitor
+              and
+              characterize various cell types within a heterogeneous solution over a depth-of-field of approximately 4
+              mm and a field-of-view of approximately 10 cm(2) is introduced. </p>
+            </div>
           </div>
 
-          <div class="publication-summary"><p>A high-throughput on-chip imaging platform that can rapidly monitor and
-            characterize various cell types within a heterogeneous solution over a depth-of-field of approximately 4
-            mm and a field-of-view of approximately 10 cm(2) is introduced. This powerful system can rapidly
-            image/monitor multiple layers of cells, within a volume of approximately 4 mL all in parallel without
-            the need for any lenses, microscope-objectives or any mechanical scanning.</p>
-          </div>
-        </div>
+          <div class="publication">
+            <div class="publication-title">Multi-Color LUCAS: Lensfree Holographic Imaging for On-Chip Cytometry and
+              Diagnostics
+            </div>
 
-        <div class="publication">
-          <div class="publication-title">Multi-Color LUCAS: Lensfree Holographic Imaging for On-Chip Cytometry and
-            Diagnostics
-          </div>
+            <div class="dates">
+              <span class="start-year">2009</span>
+            </div>
 
-          <div class="dates">
-            <span class="start-year">2009</span>
-          </div>
-
-          <div class="publication-details">
-            <span class="publisher">Cellular and Molecular Bioengineering</span>
-            <br />
-            <!--<span class="dot-separator">·</span>-->
+            <div class="publication-details">
+              <span class="publisher">Cellular and Molecular Bioengineering</span>
+              <br/>
+              <!--<span class="dot-separator">·</span>-->
 
             <span class="authors">
               <!--<span class="authors-label">Authors:</span>-->
-                <span class="author">
-                  Anthony Erlinger,
-                </span>
-                <span class="author">
-                  Sungkyu Seo,
-                </span>
-                <span class="author">
-                  Ting-wei Su
-                </span>
+                <span class="author">Anthony Erlinger,</span>
+                <span class="author">Sungkyu Seo,</span>
+                <span class="author">Ting-wei Su</span>
             </span>
 
-            <br>
+              <br>
             <span class="publication-url">
               <a href="http://link.springer.com/article/10.1007%2Fs12195-008-0018-6?LI=true" target="_blank">http://link.springer.com/article/10.1007%2Fs12195-008-0018-6?LI=true</a>
             </span>
-          </div>
+            </div>
 
-          <div class="publication-summary"><p>We illustrate a high-throughput on-chip imaging platform that can
-            rapidly monitor greater than 50,000 cells within a homogenous solution over a ﬁeld-of-view (FOV) of
-            several square centimeters. We refer to this technique as Lensfree Ultra-wide-ﬁeld Cell monitoring Array
-            platform based on Shadow imaging (LUCAS).</p>
+            <div class="publication-summary"><p>We illustrate a high-throughput on-chip imaging platform that can
+              rapidly monitor greater than 50,000 cells within a homogenous solution over a ﬁeld-of-view (FOV) of
+              several square centimeters. </p>
+            </div>
           </div>
         </div>
+        <div class="clear"></div>
       </div>
-      <div class="clear"></div>
-    </div>
 
-    <div class="footer"></div>
+      <div class="section patents mt-20">
+        <h2 class="section-header section-title">
+          <span class="text">Awards</span>
+        </h2>
+
+        <div class="content">
+          <div class="patent first">
+            <div class="patent-title">NSF Graduate Research Fellowship Program (GRFP)</div>
+
+            <div class="dates">
+              <span class="start-year">2011</span>
+            </div>
+
+
+
+            <div class="patent-summary"><p>
+              A compact and light-weight lens-free platform to conduct automated semen
+              analysis is disclosed. The device employs holographic on-chip imaging and does not require any lenses,
+              lasers or other bulky optical components to achieve phase and amplitude imaging of sperm a relatively
+              large field-of-view with an effective numerical aperture of approximately 0.2.
+            </p>
+            </div>
+
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+
+      <div class="footer"></div>
     </div>
-  <div class="view-clear"></div>
+    <div class="view-clear"></div>
 
   </div>
 </div>
 
 </body>
 </html>
+
