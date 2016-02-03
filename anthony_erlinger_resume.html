@@ -26,13 +26,58 @@
       -webkit-font-smoothing: antialiased;
     }
 
+    @font-face {
+      font-family: 'Trajan-Pro-Bold';
+      src: url('./fonts/TrajanProRegular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-smooth: always;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    @font-face {
+      font-family: 'Trajan-Pro';
+      src: url('./fonts/TrajanProRegular.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-smooth: always;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    @font-face {
+      font-family: 'Alegreya-Regular';
+      src: url('./fonts/Alegreya-Regular.otf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-smooth: always;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    @font-face {
+      font-family: 'Cinzel-Regular';
+      src: url('./fonts/Cinzel-Regular.otf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-smooth: always;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    @font-face {
+      font-family: 'Reswysokr';
+      src: url('./fonts/Reswysokr.otf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      font-smooth: always;
+      -webkit-font-smoothing: antialiased;
+    }
+
     p {
       font-weight: 300 !important;
-      font-size: 12px;
+      font-size: 13px;
     }
 
     li {
-      font-size: 12px;
+      font-size: 13px;
     }
 
     body {
@@ -70,12 +115,14 @@
     }
 
     .school-name {
-      color: #555555;
+      color: #444;
       font-weight: bold;
       min-width: 500px;
     }
 
     .experience.text {
+      font-family: Trajan-Pro-Bold;
+      font-weight: bold;
       font-size: 12px;
     }
 
@@ -138,7 +185,7 @@
 
     .dates {
       font-style: italic;
-      font-size: 12px !important;
+      font-size: 13px !important;
       color: grey !important;
       float: right !important;
       position: relative;
@@ -146,7 +193,7 @@
     }
 
     ul.responsibilities {
-      margin-top: 2px;
+      margin-top: 5px;
 
       list-style-type: none;
       /*list-style-type: square;*/
@@ -293,6 +340,16 @@
       /*padding-bottom: 5px*/
     }
 
+    #contact div {
+      padding: 2px;
+    }
+
+    .company-description {
+      font-size: 14px;
+      font-weight: bold;
+      font-style: italic;
+    }
+
     #resume .picture, #resume .contact h2, #resume .contact .label, #resume .headline, #resume .address .label {
       display: none
     }
@@ -367,22 +424,22 @@
     }
 
     .publication-title {
-      color: #555555;
+      color: #444;
       font-weight: bold;
       display: inline-block;
-      font-size: 16px;
+      font-size: 15px;
     }
 
     #resume .position .title, #resume .education .program {
       font-size: 13px;
-      color: #555555;
+      color: #444;
       /*font-style: italic;*/
       clear: both
     }
 
     #resume .publication .publication-details, #resume .patent .patent-details {
       clear: both;
-      color: #555555;
+      color: #444;
       /*font-style: italic;*/
     }
 
@@ -430,7 +487,7 @@
 
     #resume .skills li .left-paren, #resume .skills li .right-paren, #resume .skills li .proficiency, #resume .skills li .comma, #resume .skills li .years, #resume .languages li .left-paren, #resume .languages li .right-paren, #resume .languages li .proficiency, #resume .languages li .comma, #resume .languages li .years {
       font-size: 10px;
-      color: #555555
+      color: #444;
     }
 
     #resume .skills li .comma, #resume .languages li .comma {
@@ -551,7 +608,7 @@
 
     .title {
       font-weight: bold;
-      font-size: 14px !important;
+      font-size: 15px !important;
     }
 
     .position .title {
@@ -645,8 +702,6 @@
                                      target="_blank">aerlinger@gmail.com</a></span>
         </div>
 
-        <!-- Hide/ShowPhone number: -->
-
         <div class="url-personal member-url-resource">
           <span class="label">Phone:</span>
           <span class="content"><a rel="nofollow" target="_blank">805-403-6404</a></span>
@@ -663,18 +718,13 @@
           <span class="content"><a href="https://github.com/aerlinger" rel="nofollow" target="_blank">https://github.com/aerlinger</a></span>
         </div>
       </div>
-      <!--<div class="clear"></div>-->
 
       <div class="section skills">
         <h2 class="section-title">Skills</h2>
 
-        <!--<div class="section skills">-->
-        <!--<div class="content">-->
         <p>
           I've been fortunate to have had a diverse career that
         </p>
-        <!--</div>-->
-        <!--</div>-->
       </div>
 
       <div class="clear"></div>
@@ -696,14 +746,20 @@
             </div>
 
             <div class="title">Co-founder & Director of Engineering</div>
+            <div class="company-description">
+              Legal Hero provides incredible lawyers for clearly priced projects, making the process of finding a lawyer transparent and straightforward.
+            </div>
 
             <div class="job-summary">
               <ul class="responsibilities">
                 <li>
                   <span class="unibull">◆</span>
-                  Responsible for all technology and software development aspects of the company.
+
                 </li>
-                <li></li>
+                <li>
+                  <span class="unibull">◆</span>
+                  Engage with customers on a regular basis
+                </li>
               </ul>
             </div>
           </div>
@@ -723,7 +779,11 @@
               <span class="end-year">2015</span>
             </div>
 
-            <div class="title">Data Science Course Instructor (Part time temporary position)</div>
+            <div class="title">Data Science Course Instructor</div>
+
+            <div class="company-description">
+              General Assembly transforms thinkers into creators through education and opportunities in technology, business, and design.
+            </div>
 
             <div class="job-summary">
               <ul class="responsibilities">
@@ -737,7 +797,7 @@
                 </li>
                 <li>
                   <span class="unibull">◆</span>
-                  Met with students regularly on a one-on-one basis to help with learning concepts and the class project.
+                  Mentored students regularly on a one-on-one basis to help with learning concepts and the class project.
                 </li>
               </ul>
             </div>
@@ -759,27 +819,27 @@
             </div>
 
             <div class="title">Director of Data Science</div>
+            <div class="company-description">
+              Handy is an international platform through which users can book cleaners, handymen, and other household service providers.
+            </div>
 
             <div class="job-summary">
               <ul class="responsibilities">
                 <li>
                   <span class="unibull">◆</span>
-                  Responsibilities encompassed all data related initiatives within the company. Specifically, this included making
-                  data accessible and useful in a scalable manner to enable the company's strategic and operational objectives.
+                  Led the development of internal tools and data pipelining services which enabled internal data to be accessible in guiding the company's strategic and operational objectives.
                 </li>
                 <li>
                   <span class="unibull">◆</span>
-                  Led development, deployment, and management of company's internal ETL data pipeline.
+                  Built new custom dashboarding and data visualization tools utilized across all domains of the company for purposes of reporting and business intelligence.
                 </li>
                 <li>
                   <span class="unibull">◆</span>
-                  Built new custom dashboarding and data visualization tools utilized across all domains of the
-                  company for reporting and business intelligence.
+                  Developed and employed "surge pricing" algorithms responsible for adjusting prices based on economic fluctuations in supply and demand over time.
                 </li>
                 <li>
                   <span class="unibull">◆</span>
-                  Developed and employed "surge pricing" algorithms responsible for adjusting prices based on
-                  fluctuating supply and demand over time.
+                  Led initiatives to migrate and refactor existing legacy database schema to a more scalable and maintainable structure.
                 </li>
               </ul>
             </div>
@@ -787,7 +847,7 @@
         </div>
 
         <h2 class="section-header">
-          <span class="experience text">Anyone Game</span>
+          <span class="experience text">AnyoneGame, Inc.</span>
 
           <div class="clear"></div>
         </h2>
@@ -803,24 +863,23 @@
             </div>
 
             <div class="title">Co-founder & Chief Technology Officer</div>
+            <div class="company-description">
+              AnyoneGame is a social mobile gaming company backed by Lerer Hippeau Ventures, Tribeca Venture Partners, M8capital, and Eniac Ventures.
+            </div>
 
             <div class="job-summary">
               <ul class="responsibilities">
                 <li>
                   <span class="unibull">◆</span>
-                  Led development of product from concept to launch. Responsibilities included managing team
-                  building and hiring decisions, design and implementation of the core architecture patterns, and
-                  development philosopies
+                  Led team development of product from concept to launch. Responsibilities included hiring, managing code reviews, establishing core development principles, maintaining software reliability across release cycles.
                 </li>
                 <li>
                   <span class="unibull">◆</span>
-                  Designed, developed, tested, and deployed REST API serving both web and mobile (iOS & Android)
-                  frontends
+                  Designed, developed, tested, and deployed REST API serving both web and mobile (iOS & Android) frontends.
                 </li>
                 <li>
                   <span class="unibull">◆</span>
-                  Managed development operations (dev-ops) for a multi-server architecture running Ruby on Rails,
-                  MySQL, Redis, HAProxy and Sphinx running on AWS
+                  Managed development operations (dev-ops) for a multi-server architecture running Ruby on Rails, MySQL, Redis, HAProxy and Sphinx running on AWS.
                 </li>
               </ul>
 
@@ -854,17 +913,21 @@
           <div class="clear"></div>
         </h2>
 
-        <div class="content" style="height: 94px;">
+        <div class="content">
           <div class="position">
             <div class="dates">
-              <span class="start-month">02 /</span>
-              <span class="start-year">2013</span>
+              <span class="start-month">08 /</span>
+              <span class="start-year">2010</span>
               <span class="date-separator">-</span>
-              <span class="end-month">02 /</span>
-              <span class="end-year">2014</span>
+              <span class="end-month">05 /</span>
+              <span class="end-year">2013</span>
             </div>
 
-            <div class="title">Ph.D. Candidate</div>
+            <div class="title">Ph.D. Candidate, Bioelectronic Systems Lab</div>
+
+            <div class="company-description">
+            The Bioelectronic Systems Lab is a multidisciplinary research group pursuing novel applications of traditional electronics in the areas of chemistry and biology.
+            </div>
 
             <div class="job-summary">
               <ul class="responsibilities">
@@ -881,25 +944,6 @@
                   Assisted in managing and maintaining the lab's self-hosted server network responsible for running simulations and data analysis.
                 </li>
               </ul>
-
-              <!--<p>Led team of 5 Agile engineers from pre-concept through product launch. Also drove key decisions-->
-              <!--regarding the development of mobile, web, and backend software architecture.  I Was also responsible-->
-              <!--for developing, testing, optimizing, and deploying a cross-platform REST API in Rails for our mobile-->
-              <!--and web based platforms.-->
-              <!--These responsibilities included the configuration, deployment, security, and monitoring of a-->
-              <!--dynamically scalable, multi-server, multi-paradigm back end architecture which was hosted on Amazon-->
-              <!--Web Services.-->
-              <!--</p>-->
-
-              <!--<p>-->
-              <!--<strong>Technologies used include</strong> the iOS SDK, the Android SDK, Ruby/Rails (including-->
-              <!--custom tools and gems written in Ruby, MySQL/Memcached (Dalli), Redis/Sidekiq cluster, Amazon Web-->
-              <!--Services, Facebook SDK, HTML/CSS/JS website and browser-based API client.-->
-
-              <!--<em>Just Sing It is backed by top US and international investors, including Lerer Ventures, Tribeca-->
-              <!--Venture Partners, M8Capital, Eniac Ventures and DFR Asia.-->
-              <!--</em>-->
-              </p>
             </div>
             <div class="clear"></div>
           </div>
@@ -908,6 +952,57 @@
 
         <div class="clear"></div>
       </div>
+      <div class="clear"></div>
+
+      <div class="section educations  mt-20">
+        <h2 class="section-header section-title">
+          <span class="">Education</span>
+        </h2>
+
+        <div class="content">
+          <div class="education first">
+            <div class="school-name">Columbia University in the City of New York</div>
+
+            <div class="dates">
+              <span class="start-year">2010</span>
+              <span class="date-separator">-</span>
+              <span class="end-year">2011</span>
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="program">
+              <span class="degree">Master of Science (M.Sc.)</span>
+
+              <span class="program-separator">,</span>
+              <span class="field-of-study">Electrical Engineering.</span>
+              <span>3.7 GPA</span>
+            </div>
+          </div>
+
+          <div class="education">
+            <div class="school-name">University of California, Los Angeles</div>
+
+            <div class="dates">
+              <span class="start-year">2007</span>
+              <span class="date-separator">-</span>
+              <span class="end-year">2010</span>
+            </div>
+
+            <div class="program">
+              <span class="degree">Bachelor of Science (B.S.)</span>
+
+              <span class="program-separator">,</span>
+              <span class="field-of-study">Electrical Engineering</span>
+              <span>3.4 GPA</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="clear"></div>
+      </div>
+      <div class="clear"></div>
+
 
       <h2 class="section-title">Projects</h2>
 
@@ -964,64 +1059,6 @@
         <div class="clear"></div>
       </div>
 
-
-      <div class="section educations  mt-20">
-        <h2 class="section-header section-title">
-          <span class="">Education</span>
-        </h2>
-
-        <div class="content">
-          <div class="education first">
-            <div class="school-name">Columbia University in the City of New York</div>
-
-            <div class="dates">
-              <span class="start-year">2010</span>
-              <span class="date-separator">-</span>
-              <span class="end-year">2011</span>
-            </div>
-
-            <div class="clear"></div>
-
-            <div class="program">
-              <span class="degree">Master of Science (M.Sc.)</span>
-
-              <span class="program-separator">,</span>
-              <span class="field-of-study">Electrical Engineering.</span>
-              <span>3.7 GPA</span>
-            </div>
-          </div>
-
-          <div class="education">
-            <div class="school-name">University of California, Los Angeles</div>
-
-            <div class="dates">
-              <span class="start-year">2007</span>
-              <span class="date-separator">-</span>
-              <span class="end-year">2010</span>
-            </div>
-
-            <div class="program">
-              <span class="degree">Bachelor of Science (B.S.)</span>
-
-              <span class="program-separator">,</span>
-              <span class="field-of-study">Electrical Engineering</span>
-              <span>3.4 GPA</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="clear"></div>
-      </div>
-
-
-      <div class="clear"></div>
-
-      <!--
-      <h2 class="section-title">
-        <span class="text">Patents</span>
-      </h2>
-      -->
-
       <div class="section patents mt-20">
         <h2 class="section-header section-title">
           <span class="text">Patents</span>
@@ -1052,8 +1089,7 @@
             <div class="patent-summary"><p>
               A compact and light-weight lens-free platform to conduct automated semen
               analysis is disclosed. The device employs holographic on-chip imaging and does not require any lenses,
-              lasers or other bulky optical components to achieve phase and amplitude imaging of sperm a relatively
-              large field-of-view with an effective numerical aperture of approximately 0.2.
+              lasers or other bulky optical components.
             </p>
             </div>
 
@@ -1061,12 +1097,6 @@
         </div>
         <div class="clear"></div>
       </div>
-
-      <!--
-      <h2 class="section-title">
-        <span class="text">Publications</span>
-      </h2>
-      -->
 
       <div class="section publications  mt-20">
         <h2 class="section-header section-title">
@@ -1102,7 +1132,7 @@
                 We experimentally illustrate a lensfree holographic imaging platform
                 to perform on-chip cytometry. By controlling the spatial coherence of the illumination source, we record
                 a 2D holographic diffraction pattern of each cell or micro-particle on a chip using a high resolution
-                sensor array that has approximately 2 microm pixel size.
+                sensor array that has approximately 2 micron pixel size.
               </p>
             </div>
           </div>
@@ -1183,6 +1213,22 @@
 
         <div class="content">
           <div class="patent first">
+            <div class="patent-title">Columbia Venture Competition (CVC) Finalist</div>
+
+            <div class="dates">
+              <span class="start-year">2012</span>
+            </div>
+
+            <div class="patent-summary">
+              <p>The Columbia Venture Competition is an annual competition in which students and alumni compete for $100,000 in seed capital.
+
+              8 finalists were selected out of over 70 applications.</p>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="patent first">
             <div class="patent-title">NSF Graduate Research Fellowship Program (GRFP)</div>
 
             <div class="dates">
@@ -1190,52 +1236,11 @@
             </div>
 
             <div class="patent-summary">
-              <p>
-                A compact and light-weight lens-free platform to conduct automated semen
-                analysis is disclosed. The device employs holographic on-chip imaging and does not require any lenses,
-                lasers or other bulky optical components to achieve phase and amplitude imaging of sperm a relatively
-                large field-of-view with an effective numerical aperture of approximately 0.2.
-              </p>
+              <p>The NSF GRFP is a fellowship supporting graduate research in science and engineering. It is one of the oldest and most prestigious fellowships in the United States and 2,000 awards were selected from 12,000 applications in 2011.</p>
             </div>
           </div>
 
           <br>
-
-          <div class="patent first">
-            <div class="patent-title">NSF Graduate Research Fellowship Program (IGERT)</div>
-
-            <div class="dates">
-              <span class="start-year">2010</span>
-            </div>
-
-            <div class="patent-summary">
-              <p>
-                A compact and light-weight lens-free platform to conduct automated semen
-                analysis is disclosed. The device employs holographic on-chip imaging and does not require any lenses,
-                lasers or other bulky optical components to achieve phase and amplitude imaging of sperm a relatively
-                large field-of-view with an effective numerical aperture of approximately 0.2.
-              </p>
-            </div>
-          </div>
-
-          <br>
-
-          <div class="patent first">
-            <div class="patent-title">NSF Graduate Research Fellowship Program (IGERT)</div>
-
-            <div class="dates">
-              <span class="start-year">2010</span>
-            </div>
-
-            <div class="patent-summary">
-              <p>
-                A compact and light-weight lens-free platform to conduct automated semen
-                analysis is disclosed. The device employs holographic on-chip imaging and does not require any lenses,
-                lasers or other bulky optical components to achieve phase and amplitude imaging of sperm a relatively
-                large field-of-view with an effective numerical aperture of approximately 0.2.
-              </p>
-            </div>
-          </div>
         </div>
         <div class="clear"></div>
       </div>
