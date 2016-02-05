@@ -142,6 +142,7 @@
     .publisher {
       float: left;
       display: inline-block;
+      font-style: italic;
       font-size: 14px;
       font-weight: bold;
     }
@@ -156,7 +157,7 @@
       font-weight: bold;
       float: left;
       clear: both;
-      line-height: 15px;;
+      line-height: 15px;
     }
 
     .content {
@@ -201,8 +202,9 @@
     }
 
     ul.responsibilities li {
-      line-height: 13px;
+      line-height: 15px;
       margin-bottom: 6px;
+      text-align: justify;
     }
 
     /*ul.responsibilities li:before {*/
@@ -346,7 +348,7 @@
 
     .company-description {
       font-size: 14px;
-      font-weight: bold;
+      /*font-weight: bold;*/
       font-style: italic;
     }
 
@@ -450,7 +452,8 @@
 
     .publication-summary {
       margin-top: 5px;
-      line-height: 14px;
+      line-height: 15px;
+      font-style: italic;
     }
 
     #resume .position .job-summary, #resume .education .notes, #resume .education .activities, #resume .patent .patent-summary, #resume .publication .publication-summary {
@@ -678,6 +681,7 @@
     }
 
     .job-summary ul li {
+      width: 580px;
       margin-left: 15px;
     }
   </style>
@@ -748,7 +752,7 @@
               <ul class="responsibilities">
                 <li>
                   <span class="unibull">◆</span>
-                  Designed and developed full-stack web platform, built a RESTful API to serve AngularJS frontend and deployed background services for scalable integration with third party tools. Deployment and configuration was managed by Chef on AWS.
+                  Designed and developed full-stack web platform, built a REST API to serve AngularJS frontend and deployed background services for scalable integration with third party tools. Deployment and configuration was managed by Chef on AWS.
                 </li>
                 <li>
                   <span class="unibull">◆</span>
@@ -875,11 +879,11 @@
                   <span class="unibull">◆</span>
                   Designed, developed, tested, and deployed REST API serving both web and mobile (iOS & Android) frontends. API response times were time-critical and consistently completed in less than 35 milliseconds.
                 </li>
-                <li style="margin-bottom: 0;">
+                <li>
                   <span class="unibull">◆</span>
                   Managed development operations (dev-ops) for a multi-server architecture running Ruby on Rails, MySQL, Redis, HAProxy and Sphinx running on AWS.
                 </li>
-                <li>
+                <li style="margin-bottom: 0;">
                   <span class="unibull">◆</span>
                   App received consistent reviews of 4.5 stars with over 100,000 downloads.
                 </li>
@@ -974,11 +978,11 @@
             <div class="clear"></div>
 
             <div class="program">
-              <span class="degree">Master of Science (M.Sc.)</span>
+              <span class="degree">Master of Science (M.S.),</span>
 
-              <span class="program-separator">,</span>
-              <span class="field-of-study">Electrical Engineering.</span>
-              <span>3.7 GPA</span>
+              <!--<span class="program-separator">,</span>-->
+              <span class="field-of-study">Electrical Engineering</span>
+              <em><span>3.7 GPA</span></em>
             </div>
           </div>
 
@@ -992,11 +996,11 @@
             </div>
 
             <div class="program">
-              <span class="degree">Bachelor of Science (B.S.)</span>
+              <span class="degree">Bachelor of Science (B.S.), </span>
 
-              <span class="program-separator">,</span>
+              <!--<span class="program-separator">,</span>-->
               <span class="field-of-study">Electrical Engineering</span>
-              <span>3.4 GPA</span>
+              <em><span>3.4 GPA</span></em>
             </div>
           </div>
         </div>
@@ -1005,7 +1009,7 @@
       </div>
       <div class="clear"></div>
 
-
+      <br />
       <h2 class="section-title">Projects</h2>
 
       <div class="clear"></div>
@@ -1055,7 +1059,7 @@
 
             <div class="job-summary">
               <p>
-                Circuit Box is an interactive circuit simulator written in JavaScript on Node.js. Using numerical solvers (Euler's method), it can compute and render voltages for complex analog and digital circuits at multiple frames per second.
+                Circuit Box is an interactive circuit simulator written in JavaScript on Node.js. Using numerical solvers (Euler's method), it can compute and render voltages and currents for complex analog and digital circuits at multiple frames per second.
               </p>
             </div>
           </div>
@@ -1109,7 +1113,7 @@
         </h2>
 
         <div class="content">
-          <div class="publication first">
+          <div class="publication" style="width:619px">
             <div class="publication-title">
               High-throughput lens-free blood analysis on a chip
             </div>
